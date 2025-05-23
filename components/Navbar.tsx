@@ -8,7 +8,7 @@ const Navbar = () => {
   const extractedCartId = cart?.id?.split("/").pop()
 
   return (
-    <div className="flex justify-between items-center p-4 sticky top-0 bg-gray-100 text-black border-b border-gray-700 shadow-lg z-50">
+    <div className="flex justify-between items-center p-4 sticky top-0 bg-white text-black border-gray-700 shadow-lg z-50">
       <div className="flex gap-2">
         <Link
           href={"/"}

@@ -8,25 +8,13 @@ const Calander = () => {
   const [events, setEvents] = useState([
     {
       title: "Mario – Fade",
-      start: now,
-      end: new Date(now.getTime() + 30 * 60 * 1000), // 30 mins later
+      start: new Date(now.getTime() + 0 * 0 * 1000),
+      end: new Date(now.getTime() + 0 * 60 * 1000),
     },
     {
       title: "Jack – Beard",
-      start: new Date(
-        now.getFullYear(),
-        now.getMonth(),
-        now.getDate() + 1,
-        now.getHours(),
-        now.getMinutes()
-      ),
-      end: new Date(
-        now.getFullYear(),
-        now.getMonth(),
-        now.getDate() + 1,
-        now.getHours(),
-        now.getMinutes() + 30
-      ),
+      start: new Date(now.getTime() + 0 * 0 * 1000),
+      end: new Date(now.getTime() + 0 * 60 * 1000),
     },
   ])
 

@@ -1,6 +1,7 @@
 import Image from "next/image"
 import barber1 from "../public/assets/barber1.jpg"
 import barber2 from "../public/assets/barber2.jpg"
+import barber3 from "../public/assets/barber3.jpg"
 import hero from "../public/assets/hero.jpg"
 import Link from "next/link"
 
@@ -10,8 +11,8 @@ export default function Home() {
       {/* Hero */}
       <section className="relative h-[80vh] bg-black">
         <Image
-          width={300}
-          height={300}
+          width={1300}
+          height={1300}
           src={hero}
           alt="Barber Shop"
           className="absolute inset-0 object-cover w-full h-full opacity-70"
@@ -78,7 +79,7 @@ export default function Home() {
           <Image
             width={500}
             height={500}
-            src={barber2}
+            src={barber3}
             alt="Booking"
             className="rounded-2xl shadow-md"
           />

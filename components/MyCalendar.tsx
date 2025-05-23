@@ -7,7 +7,6 @@ import "react-big-calendar/lib/css/react-big-calendar.css"
 
 import {
   Dialog,
-  DialogTrigger,
   DialogContent,
   DialogHeader,
   DialogTitle,
@@ -86,10 +85,7 @@ export const MyCalendar = ({ events, setEvents }: MyCalendarProps) => {
   return (
     <div className="bg-white p-4 rounded shadow">
       <Dialog open={open} onOpenChange={setOpen}>
-        <DialogTrigger asChild>
-          <DialogContent>...</DialogContent>
-        </DialogTrigger>
-        <DialogContent>
+        <DialogContent className="bg-white">
           <DialogHeader>
             <DialogTitle>Book Appointment</DialogTitle>
           </DialogHeader>

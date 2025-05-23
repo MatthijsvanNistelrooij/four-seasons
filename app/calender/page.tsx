@@ -3,13 +3,33 @@ import { MyCalendar } from "@/components/MyCalendar"
 import React, { useState } from "react"
 
 const Calander = () => {
+  const now = new Date()
+
   const [events, setEvents] = useState([
     {
       title: "Mario – Fade",
-      start: new Date(),
-      end: new Date(new Date().getTime() + 30 * 60 * 1000),
+      start: now,
+      end: new Date(now.getTime() + 30 * 60 * 1000), // 30 mins later
+    },
+    {
+      title: "Jack – Beard",
+      start: new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate() + 1,
+        now.getHours(),
+        now.getMinutes()
+      ),
+      end: new Date(
+        now.getFullYear(),
+        now.getMonth(),
+        now.getDate() + 1,
+        now.getHours(),
+        now.getMinutes() + 30
+      ),
     },
   ])
+
   return (
     <div className="w-full p-20">
       <MyCalendar events={events} setEvents={setEvents} />

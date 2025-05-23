@@ -11,6 +11,7 @@
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.14",
     "@radix-ui/react-slot": "^1.2.3",
+    "@shopify/storefront-api-client": "^1.0.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -21,7 +22,8 @@
     "react-dom": "^19.0.0",
     "tailwind-animate": "^0.2.10",
     "tailwind-merge": "^3.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.25.23"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

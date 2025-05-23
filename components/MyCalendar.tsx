@@ -37,6 +37,7 @@ export interface Event {
 interface FormData {
   name: string
   service: string
+  time: string
   start: Date | null
   end: Date | null
 }
@@ -50,16 +51,17 @@ export const MyCalendar = ({ events, setEvents }: MyCalendarProps) => {
   const [formData, setFormData] = useState<FormData>({
     name: "",
     service: "",
+    time: "",
     start: null,
     end: null,
   })
-
   const [open, setOpen] = useState(false)
 
   const handleSlotSelect = (slotInfo: SlotInfo) => {
     setFormData({
       name: "",
       service: "",
+      time: "",
       start: slotInfo.start,
       end: slotInfo.end,
     })
@@ -105,6 +107,14 @@ export const MyCalendar = ({ events, setEvents }: MyCalendarProps) => {
               value={formData.service}
               onChange={(e) =>
                 setFormData({ ...formData, service: e.target.value })
+              }
+              required
+            />
+            <Input
+              type="time"
+              value={formData.time}
+              onChange={(e) =>
+                setFormData({ ...formData, time: e.target.value })
               }
               required
             />

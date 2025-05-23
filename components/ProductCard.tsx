@@ -27,7 +27,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div
       key={id}
-      className="border-2 hover:border-gray-300 rounded-lg hover:shadow p-6 flex flex-col items-center"
+      className="border border-gray-400 hover:shadow p-6 flex flex-col items-center"
     >
       <Image
         src={imageSrc}
@@ -42,13 +42,13 @@ const ProductCard: React.FC<ProductCardProps> = ({
       <div className="flex flex-col gap-2 mt-4">
         <button
           onClick={() => addToCart(id, 1, variantId)}
-          className="px-4 py-2 border rounded-md hover:border-gray-400"
+          className="px-4 py-2 border hover:border-gray-500"
         >
           🛒 Add to Cart
         </button>
         <Link
           href={`/product/${handle}`}
-          className="px-4 py-2 mb-8 border rounded-md hover:border-gray-400"
+          className="px-4 py-2 mb-8 border hover:border-gray-500"
         >
           🔍 View Details
         </Link>

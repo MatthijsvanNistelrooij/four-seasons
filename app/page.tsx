@@ -84,13 +84,19 @@ export default function Home() {
             className="rounded-2xl shadow-md"
           />
         </div>
-        <div className="md:w-1/2 mb-10 md:mb-0">
+        <div className="md:w-1/2 mb-20 md:mb-0 flex flex-col">
           <h2 className="text-3xl font-bold mb-4">Products We Use</h2>
           <p className="text-lg text-gray-600">
             We only use high-quality grooming products to ensure the best
             experience. From pomades to straight razors, everything is top
             shelf.
           </p>
+          <Link
+            href={"/products"}
+            className="px-6 py-3 mt-8 w-32 border rounded hover:bg-gray-800 hover:text-white transition"
+          >
+            Shop Now
+          </Link>
         </div>
       </section>
 

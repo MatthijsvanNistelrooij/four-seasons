@@ -20,19 +20,14 @@ const Navbar = () => {
           href={"/products"}
           className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
         >
-          Products
+          Webshop
         </Link>
-        <Link
-          href={"/collections"}
-          className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
-        >
-          Collections
-        </Link>
+
         <Link
           href={"/calender"}
           className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
         >
-          Calender
+          Book Appointment
         </Link>
       </div>
 

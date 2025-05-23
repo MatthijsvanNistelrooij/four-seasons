@@ -89,7 +89,7 @@ const ProductDetails = () => {
         <div className="flex items-center space-x-4">
           <button
             onClick={handleDecrease}
-            className="p-2 border rounded hover:bg-gray-200"
+            className="p-2 border rounded hover:bg-gray-100"
           >
             <Minus className="w-6 h-6" />
           </button>
@@ -116,7 +116,7 @@ const ProductDetails = () => {
 
           <button
             onClick={handleIncrease}
-            className="p-2 border rounded hover:bg-gray-200"
+            className="p-2 border rounded hover:bg-gray-100"
           >
             <Plus className="w-6 h-6" />
           </button>

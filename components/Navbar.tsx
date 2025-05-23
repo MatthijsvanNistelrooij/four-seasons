@@ -14,7 +14,13 @@ const Navbar = () => {
           href={"/"}
           className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
         >
-          LOGO
+          FOUR SEASONS
+        </Link>
+        <Link
+          href={"/products"}
+          className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
+        >
+          Products
         </Link>
         <Link
           href={"/collections"}

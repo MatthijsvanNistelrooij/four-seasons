@@ -89,7 +89,7 @@ const ProductDetails = () => {
         <div className="flex items-center space-x-4">
           <button
             onClick={handleDecrease}
-            className="p-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+            className="p-2 border rounded hover:bg-gray-200"
           >
             <Minus className="w-6 h-6" />
           </button>
@@ -102,13 +102,13 @@ const ProductDetails = () => {
               onChange={handleQuantityChange}
               min="1"
               step={1}
-              className="w-16 p-2 text-center rounded bg-gray-700"
+              className="w-16 p-2 text-center rounded border"
               autoFocus
             />
           ) : (
             <p
               onClick={() => setEdit(true)}
-              className="w-16 p-2 cursor-pointer rounded text-center bg-gray-700"
+              className="w-16 p-2 cursor-pointer border rounded text-center"
             >
               {quantity}
             </p>
@@ -116,7 +116,7 @@ const ProductDetails = () => {
 
           <button
             onClick={handleIncrease}
-            className="p-2 bg-gray-700 text-white rounded hover:bg-gray-600"
+            className="p-2 border rounded hover:bg-gray-200"
           >
             <Plus className="w-6 h-6" />
           </button>
@@ -124,7 +124,7 @@ const ProductDetails = () => {
             onClick={() =>
               addToCart(product.id, quantity, product.variants.nodes[0].id)
             }
-            className="px-4 py-2 bg-green-900 text-white rounded-md hover:bg-green-800 min-w-40"
+            className="px-4 py-2 border rounded-md hover:bg-gray-100 min-w-40"
           >
             🛒 Add to Cart
           </button>

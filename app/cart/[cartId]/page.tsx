@@ -117,14 +117,14 @@ const Cart = () => {
                         <div className="flex items-center gap-2">
                           <button
                             onClick={() => updateQuantity(lineId, quantity - 1)}
-                            className="p-1 bg-gray-700 text-white rounded hover:bg-gray-800"
+                            className="p-1 border rounded hover:bg-gray-100"
                           >
                             <Minus className="w-4 h-4" />
                           </button>
                           <p className="px-2 min-w-6 text-center">{quantity}</p>
                           <button
                             onClick={() => updateQuantity(lineId, quantity + 1)}
-                            className="p-1 bg-gray-700 text-white rounded hover:bg-gray-800"
+                            className="p-1 border rounded hover:bg-gray-100"
                           >
                             <Plus className="w-4 h-4" />
                           </button>

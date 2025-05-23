@@ -31,7 +31,7 @@ const Calander = () => {
   ])
 
   return (
-    <div className="w-full p-20">
+    <div className="space-y-12 p-20 bg-gray-100">
       <MyCalendar events={events} setEvents={setEvents} />
     </div>
   )

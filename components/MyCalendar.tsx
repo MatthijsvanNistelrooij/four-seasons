@@ -73,14 +73,24 @@ export const MyCalendar = ({ events, setEvents }: MyCalendarProps) => {
   }
 
   const handleSlotSelect = (slotInfo: SlotInfo) => {
-    setFormData({
-      name: "",
-      service: "",
-      time: "",
-      start: slotInfo.start,
-      end: slotInfo.end,
-    })
-    setOpen(true)
+    // Check for overlapping event
+    const overlappingEvent = events.find(
+      (event) => slotInfo.start >= event.start && slotInfo.start < event.end
+    )
+
+    if (overlappingEvent) {
+      handleEventClick(overlappingEvent)
+    } else {
+      setEditingEventId(null)
+      setFormData({
+        name: "",
+        service: "",
+        time: "",
+        start: slotInfo.start,
+        end: slotInfo.end,
+      })
+      setOpen(true)
+    }
   }
 
   const handleSubmit = async (e: React.FormEvent) => {

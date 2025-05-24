@@ -57,7 +57,7 @@ export default function Home() {
             ensures youre in the chair right on time.
           </p>
           <Link
-            href={"/calender"}
+            href={"/calendar"}
             className="px-6 py-3 bg-black text-white rounded hover:bg-gray-800 transition"
           >
             Book Now

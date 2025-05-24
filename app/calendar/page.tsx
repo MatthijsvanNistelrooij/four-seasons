@@ -19,8 +19,10 @@ const Calander = () => {
   ])
 
   return (
-    <div className="space-y-12 p-20 bg-gray-100">
-      <MyCalendar events={events} setEvents={setEvents} />
+    <div className="h-screen flex justify-center bg-gray-50">
+      <div className="main-container p-10 bg-white max-w-5xl w-full border rounded-3xl m-10">
+        <MyCalendar events={events} setEvents={setEvents} />
+      </div>
     </div>
   )
 }

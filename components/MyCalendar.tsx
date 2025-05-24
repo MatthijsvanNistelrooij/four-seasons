@@ -82,6 +82,17 @@ export const MyCalendar = ({ events, setEvents }: MyCalendarProps) => {
     }
   }
 
+  const handleEventClick = (event: Event) => {
+    setFormData({
+      name: event.title.split(" – ")[0],
+      service: event.title.split(" – ")[1],
+      time: "", // optionally parse from event.start
+      start: event.start,
+      end: event.end,
+    })
+    setOpen(true)
+  }
+
   return (
     <div className="bg-white p-4 rounded shadow">
       <Dialog open={open} onOpenChange={setOpen}>
@@ -129,6 +140,7 @@ export const MyCalendar = ({ events, setEvents }: MyCalendarProps) => {
         style={{ height: 500 }}
         selectable
         onSelectSlot={handleSlotSelect}
+        onSelectEvent={handleEventClick}
       />
     </div>
   )

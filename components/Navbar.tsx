@@ -1,5 +1,6 @@
 "use client"
 import { useCart } from "@/context/CartContext"
+import { Calendar, Calendar1, ShoppingBag } from "lucide-react"
 import Link from "next/link"
 
 const Navbar = () => {
@@ -20,14 +21,16 @@ const Navbar = () => {
           href={"/products"}
           className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
         >
-          Webshop
+          <ShoppingBag className="md:hidden" />{" "}
+          <h1 className="hidden md:block">Shop</h1>
         </Link>
 
         <Link
-          href={"/calender"}
+          href={"/calendar"}
           className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
         >
-          Book Appointment
+          <Calendar1 className="md:hidden" />{" "}
+          <h1 className="hidden md:block">Book Appointment</h1>
         </Link>
       </div>
 

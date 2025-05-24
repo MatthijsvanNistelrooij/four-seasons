@@ -93,7 +93,7 @@ export default function Home() {
           </p>
           <Link
             href={"/products"}
-            className="px-6 py-3 mt-8 w-32 border rounded hover:bg-gray-800 hover:text-white transition"
+            className="px-6 py-3 mt-8 w-32 border bg-black text-white rounded hover:bg-gray-800 hover:text-white transition"
           >
             Shop Now
           </Link>

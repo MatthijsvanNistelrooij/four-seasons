@@ -1,6 +1,6 @@
 "use client"
 import { useCart } from "@/context/CartContext"
-import { Calendar, Calendar1, ShoppingBag, Store } from "lucide-react"
+import { Calendar1, ShoppingBag, Store } from "lucide-react"
 import Link from "next/link"
 
 const Navbar = () => {
@@ -13,14 +13,14 @@ const Navbar = () => {
       <div className="flex gap-2">
         <Link
           href={"/"}
-          className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
+          className="text-black px-4 py-2 rounded border border-gray-700 hover:bg-gray-200 transition-all"
         >
           <Store className="md:hidden" />
           <h1 className="hidden md:block">FOUR SEASONS</h1>
         </Link>
         <Link
           href={"/products"}
-          className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
+          className="text-black px-4 py-2 rounded border border-gray-700 hover:bg-gray-200 transition-all"
         >
           <ShoppingBag className="md:hidden" />{" "}
           <h1 className="hidden md:block">Shop</h1>
@@ -28,7 +28,7 @@ const Navbar = () => {
 
         <Link
           href={"/calendar"}
-          className="text-black px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
+          className="text-black px-4 py-2 rounded border border-gray-700 hover:bg-gray-200 transition-all"
         >
           <Calendar1 className="md:hidden" />{" "}
           <h1 className="hidden md:block">Book Appointment</h1>
@@ -37,7 +37,7 @@ const Navbar = () => {
 
       <Link
         href={`/cart/${extractedCartId}`}
-        className="text-black flex items-center gap-2 px-4 py-2 rounded-md border border-gray-700 hover:bg-gray-200 transition-all"
+        className="text-black flex items-center gap-2 px-4 py-2 rounded border border-gray-700 hover:bg-gray-200 transition-all"
       >
         🛒 <span>({totalQuantity})</span>
       </Link>

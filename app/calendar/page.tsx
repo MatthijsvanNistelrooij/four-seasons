@@ -1,22 +1,40 @@
 "use client"
+import { getAllAppointments } from "@/appwrite"
 import { MyCalendar } from "@/components/MyCalendar"
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
+
+type CalendarEvent = {
+  id: string
+  title: string
+  start: Date
+  end: Date
+}
 
 const Calander = () => {
-  const now = new Date()
+  const [events, setEvents] = useState<CalendarEvent[]>([])
+  console.log("appointments", events)
 
-  const [events, setEvents] = useState([
-    {
-      title: "Mario – Fade",
-      start: new Date(now.getTime() + 0 * 0 * 1000),
-      end: new Date(now.getTime() + 0 * 60 * 1000),
-    },
-    {
-      title: "Jack – Beard",
-      start: new Date(now.getTime() + 0 * 0 * 1000),
-      end: new Date(now.getTime() + 0 * 60 * 1000),
-    },
-  ])
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await getAllAppointments()
+
+      const formattedEvents = data.map((doc) => {
+        const start = new Date(doc.date)
+        const end = new Date(start.getTime() + 30 * 60 * 1000)
+
+        return {
+          id: doc.$id,
+          title: `${doc.name} – ${doc.service}`,
+          start,
+          end,
+        }
+      })
+
+      setEvents(formattedEvents)
+    }
+
+    fetchData()
+  }, [])
 
   return (
     <div className="h-screen flex justify-center bg-gray-50">

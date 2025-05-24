@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client"
 import { useState } from "react"
 import { Calendar, dateFnsLocalizer, SlotInfo } from "react-big-calendar"
@@ -14,6 +15,7 @@ import {
 } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { createAppointment, updateAppointment } from "@/appwrite"
 
 const locales = {
   "en-US": enUS,
@@ -28,6 +30,7 @@ const localizer = dateFnsLocalizer({
 })
 
 export interface Event {
+  id: string
   title: string
   start: Date
   end: Date
@@ -55,6 +58,19 @@ export const MyCalendar = ({ events, setEvents }: MyCalendarProps) => {
     end: null,
   })
   const [open, setOpen] = useState(false)
+  const [editingEventId, setEditingEventId] = useState<string | null>(null)
+
+  console.log(editingEventId)
+
+  const combineDateAndTime = (date: Date, time: string): Date => {
+    const [hours, minutes] = time.split(":").map(Number)
+    const combined = new Date(date)
+    combined.setHours(hours)
+    combined.setMinutes(minutes)
+    combined.setSeconds(0)
+    combined.setMilliseconds(0)
+    return combined
+  }
 
   const handleSlotSelect = (slotInfo: SlotInfo) => {
     setFormData({
@@ -67,32 +83,73 @@ export const MyCalendar = ({ events, setEvents }: MyCalendarProps) => {
     setOpen(true)
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (formData.start && formData.end) {
-      setEvents([
-        ...events,
-        {
-          title: `${formData.name} – ${formData.service}`,
-          start: formData.start,
-          end: formData.end,
-        },
-      ])
-      setOpen(false)
+
+    if (formData.start && formData.time) {
+      const combinedStart = combineDateAndTime(formData.start, formData.time)
+      const combinedEnd = new Date(combinedStart.getTime() + 30 * 60 * 1000) // 30min default duration
+
+      const newEventData = {
+        name: formData.name,
+        service: formData.service,
+        date: combinedStart.toISOString(),
+      }
+
+      try {
+        if (editingEventId) {
+          await updateAppointment(editingEventId, newEventData as any)
+
+          setEvents((prev) =>
+            prev.map((evt) =>
+              evt.id === editingEventId
+                ? {
+                    ...evt,
+                    title: `${formData.name} – ${formData.service}`,
+                    start: combinedStart,
+                    end: combinedEnd,
+                  }
+                : evt
+            )
+          )
+        } else {
+          const newAppointment = await createAppointment(newEventData)
+          setEvents([
+            ...events,
+            {
+              id: newAppointment.$id,
+              title: `${formData.name} – ${formData.service}`,
+              start: combinedStart,
+              end: combinedEnd,
+            },
+          ])
+        }
+
+        setOpen(false)
+        setEditingEventId(null)
+      } catch (error) {
+        console.error("Failed to save appointment", error)
+      }
     }
   }
 
   const handleEventClick = (event: Event) => {
+    setEditingEventId(event.id)
+
+    const [name, service] = event.title.split(" – ")
+    const hours = event.start.getHours().toString().padStart(2, "0")
+    const minutes = event.start.getMinutes().toString().padStart(2, "0")
+
     setFormData({
-      name: event.title.split(" – ")[0],
-      service: event.title.split(" – ")[1],
-      time: "", // optionally parse from event.start
+      name,
+      service,
+      time: `${hours}:${minutes}`,
       start: event.start,
       end: event.end,
     })
+
     setOpen(true)
   }
-
   return (
     <div className="bg-white p-4 rounded shadow">
       <Dialog open={open} onOpenChange={setOpen}>

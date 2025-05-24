@@ -29,7 +29,7 @@ export default function Home() {
 
       {/* Section 1 */}
       <section className="flex flex-col md:flex-row items-center py-20 px-1 md:px-16">
-        <div className="md:w-1/2 md:pl-2">
+        <div className="md:w-1/2 md:pl-2 m-5">
           <Image
             width={500}
             height={500}
@@ -38,7 +38,7 @@ export default function Home() {
             className="rounded-2xl shadow-md"
           />
         </div>
-        <div className="md:w-1/2 mb-10 md:mb-0">
+        <div className="md:w-1/2 mb-10 md:mb-0 m-5">
           <h2 className="text-3xl font-bold mb-4">Our Story</h2>
           <p className="text-lg text-gray-600">
             At Sharp Style, we’ve been perfecting our craft for over a decade.
@@ -84,7 +84,7 @@ export default function Home() {
             className="rounded-2xl shadow-md"
           />
         </div>
-        <div className="md:w-1/2 mb-20 md:mb-0 flex flex-col">
+        <div className="md:w-1/2 mb-20 md:mb-0 flex flex-col m-5">
           <h2 className="text-3xl font-bold mb-4">Products We Use</h2>
           <p className="text-lg text-gray-600">
             We only use high-quality grooming products to ensure the best

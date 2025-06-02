@@ -1,19 +1,20 @@
 "use client"
-import Image from "next/image"
-import barber1 from "../public/assets/barber1.jpg"
-import barber2 from "../public/assets/barber2.jpg"
-import barber3 from "../public/assets/barber3.jpg"
-import hero from "../public/assets/hero.jpg"
-import Link from "next/link"
+// import Image from "next/image"
+// import barber1 from "../public/assets/barber1.jpg"
+// import barber2 from "../public/assets/barber2.jpg"
+// import barber3 from "../public/assets/barber3.jpg"
+// import hero from "../public/assets/hero.jpg"
+// import Link from "next/link"
 import { AppointmentDialog } from "@/components/AppointmentDialog"
-import { Button } from "@/components/ui/button"
-import { Phone } from "lucide-react"
+// import { Button } from "@/components/ui/button"
+// import { Phone } from "lucide-react"
 
 export default function Home() {
   return (
     <div className="font-sans text-gray-800">
+      <AppointmentDialog />
       {/* Hero */}
-      <section className="relative h-[80vh] bg-black">
+      {/* <section className="relative h-[80vh] bg-black">
         <Image
           width={1300}
           height={1300}
@@ -29,17 +30,23 @@ export default function Home() {
             Precision cuts. Classic service. Book your style today.
           </p>
           <div className="flex gap-2 p-5">
-            <AppointmentDialog />
+
             <Button className="bg-[#e9207e] hover:bg-[#e9207e] hover:-translate-y-1 transition-transform duration-200 rounded-full">
               <Phone /> CONTACT
             </Button>
-
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* <iframe
+        src="https://four-seasons-k71l.vercel.app/"
+        width="100%"
+        height="500px"
+      >
+      </iframe> */}
 
       {/* Section 1 */}
-      <section className="flex flex-col md:flex-row items-center py-20 px-1 md:px-16">
+      {/* <section className="flex flex-col md:flex-row items-center py-20 px-1 md:px-16">
         <div className="md:w-1/2 md:pl-2 m-5">
           <Image
             width={500}
@@ -56,10 +63,10 @@ export default function Home() {
             to every cut.
           </p>
         </div>
-      </section>
+      </section> */}
 
       {/* Section 2 with CTA */}
-      <section className="flex flex-col md:flex-row items-center py-20 px-6 md:px-16 bg-gray-100">
+      {/* <section className="flex flex-col md:flex-row items-center py-20 px-6 md:px-16 bg-gray-100">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h2 className="text-3xl font-bold mb-4">Book an Appointment</h2>
           <p className="text-lg text-gray-700 mb-6">
@@ -82,9 +89,9 @@ export default function Home() {
             className="rounded-2xl shadow-md"
           />
         </div>
-      </section>
+      </section> */}
 
-      <section className="flex flex-col md:flex-row items-center py-20 px-6 md:px-16">
+      {/* <section className="flex flex-col md:flex-row items-center py-20 px-6 md:px-16">
         <div className="md:w-1/2 md:pl-12">
           <Image
             width={500}
@@ -108,14 +115,14 @@ export default function Home() {
             Shop Now
           </Link>
         </div>
-      </section>
+      </section> */}
 
-      <footer className="bg-black text-white py-8 text-center">
+      {/* <footer className="bg-black text-white py-8 text-center">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Sharp Style Barbers. All rights
           reserved.
         </p>
-      </footer>
+      </footer> */}
     </div>
   )
 }

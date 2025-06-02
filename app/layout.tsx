@@ -39,8 +39,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable}  ${gravitasOne.variable} antialiased`}
       >
         <CartProvider>
-          <TopNav />
-          <Navbar />
+          {/* <TopNav />
+          <Navbar /> */}
           {children}
         </CartProvider>
       </body>

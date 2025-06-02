@@ -30,7 +30,7 @@ export default function Home() {
           </p>
           <div className="flex gap-2 p-5">
             <AppointmentDialog />
-            <Button className="bg-[#e9207e] hover:bg-[#e9207e] hover:-translate-y-1 transition-transform duration-200 rounded-full h-12 font-bold text-lg tracking-widest">
+            <Button className="bg-[#e9207e] hover:bg-[#e9207e] hover:-translate-y-1 transition-transform duration-200 rounded-full">
               <Phone /> CONTACT
             </Button>
 

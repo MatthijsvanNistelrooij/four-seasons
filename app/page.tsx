@@ -29,10 +29,11 @@ export default function Home() {
             Precision cuts. Classic service. Book your style today.
           </p>
           <div className="flex gap-2 p-5">
-            <Button className="bg-[#e9207e] hover:bg-[#e9207e] hover:-translate-y-1 transition-transform duration-200 rounded-full">
+            <AppointmentDialog />
+            <Button className="bg-[#e9207e] hover:bg-[#e9207e] hover:-translate-y-1 transition-transform duration-200 rounded-full h-12 font-bold text-lg tracking-widest">
               <Phone /> CONTACT
             </Button>
-            <AppointmentDialog />
+
           </div>
         </div>
       </section>

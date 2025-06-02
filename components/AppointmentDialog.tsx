@@ -19,7 +19,7 @@ import { Step2_Barber } from "./steps/Step2_Barber"
 import { Step3_Date } from "./steps/Step3_Date"
 import { Step4_Time } from "./steps/Step4_Time"
 import { Step5_Contact } from "./steps/Step5_Contact"
-import { CalendarRange  } from "lucide-react"
+import { CalendarRange } from "lucide-react"
 import { createAppointment } from "@/appwrite"
 
 export function AppointmentDialog() {
@@ -109,9 +109,9 @@ export function AppointmentDialog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button className="bg-[#e9207e] hover:bg-[#e9207e] hover:-translate-y-1 transition-transform duration-200 rounded-full">
+        <Button className="bg-[#e9207e] hover:bg-[#e9207e] hover:-translate-y-1 h-12 transition-transform duration-200 rounded-full text-lg font-bold tracking-widest">
           <CalendarRange />
-          AFSPRAAK MAKEN
+          MAAK EEN AFSPRAAK
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-lg !bg-white !rounded-xl border min-h-[620px] select-none">

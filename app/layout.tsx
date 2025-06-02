@@ -4,8 +4,8 @@ import { Gravitas_One } from "next/font/google" // Add this
 
 import "./globals.css"
 import { CartProvider } from "@/context/CartContext"
-import Navbar from "@/components/Navbar"
-import TopNav from "@/components/TopNav"
+// import Navbar from "@/components/Navbar"
+// import TopNav from "@/components/TopNav"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

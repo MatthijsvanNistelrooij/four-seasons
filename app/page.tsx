@@ -12,7 +12,6 @@ import { AppointmentDialog } from "@/components/AppointmentDialog"
 export default function Home() {
   return (
     <div className="font-sans text-gray-800">
-      <AppointmentDialog />
       {/* Hero */}
       {/* <section className="relative h-[80vh] bg-black">
         <Image
@@ -38,10 +37,12 @@ export default function Home() {
         </div>
       </section> */}
 
+      <AppointmentDialog />
+
       {/* <iframe
         src="https://four-seasons-k71l.vercel.app/"
         width="100%"
-        height="500px"
+        height="1000px"
       >
       </iframe> */}
 

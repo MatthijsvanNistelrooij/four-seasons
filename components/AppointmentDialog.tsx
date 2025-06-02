@@ -109,7 +109,7 @@ export function AppointmentDialog() {
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Button className="bg-[#e9207e] hover:bg-[#e9207e] rounded-full">
+        <Button className="bg-[#e9207e] hover:bg-[#e9207e] rounded-full text-white">
           <CalendarRange />
           MAAK EEN AFSPRAAK
         </Button>

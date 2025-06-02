@@ -37,7 +37,9 @@ export default function Home() {
         </div>
       </section> */}
 
-      <AppointmentDialog />
+      <div className="h-screen w-full flex justify-center text-center items-center">
+        <AppointmentDialog />
+      </div>
 
       {/* <iframe
         src="https://four-seasons-k71l.vercel.app/"

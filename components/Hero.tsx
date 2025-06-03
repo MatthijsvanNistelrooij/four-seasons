@@ -158,7 +158,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
             </div>
           </motion.div>
 
-          <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 flex gap-4">
+          <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 flex gap-5">
             {slides.map((_, i) => (
               <button
                 key={i}
@@ -169,7 +169,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
                   index === i
                     ? "border-2 border-white bg-transparent"
-                    : "bg-gray-800 border border-transparent"
+                    : "bg-gray-800 border-2 border-transparent"
                 }`}
                 aria-label={`Go to slide ${i + 1}`}
               />

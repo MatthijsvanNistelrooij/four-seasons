@@ -105,19 +105,19 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
       <button
         aria-label="Previous slide"
         onClick={goToPrevious}
-        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white p-2 py-4 z-20"
+        className="hidden md:flex absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white p-2 py-4 z-20"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
         aria-label="Next slide"
         onClick={goToNext}
-        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white p-2 py-4 z-20"
+        className="hidden md:flex absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white p-2 py-4 z-20"
       >
         <ChevronRight className="w-6 h-6" />
       </button>
 
-      <div className="relative z-10 flex flex-col items-start justify-center h-full text-white px-6 md:px-16 ml-5">
+      <div className="relative z-10 flex flex-col items-start justify-center h-full text-white px-6 md:px-16 ml-0 md:ml-5">
         <motion.h1
           key={`heading-${index}`}
           initial={{ opacity: 0, y: 30 }}
@@ -145,14 +145,14 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <div className="flex flex-col md:flex-row gap-2">
+            <div className="flex gap-2">
               <Button
                 onClick={onOpenDialog}
-                className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full"
+                className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full md:p-6 md:text-lg tracking-widest"
               >
                 <CalendarRange className="w-4 h-4" /> {appointmentText}
               </Button>
-              <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full">
+              <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full md:p-6 md:text-lg tracking-widest">
                 <Phone className="w-4 h-4" /> {contactText}
               </Button>
             </div>

@@ -82,7 +82,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
   const contactText = "CONTACT"
 
   return (
-    <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] bg-black overflow-hidden">
+    <section className="relative h-[40vh] md:h-[60vh] lg:h-[80vh] bg-black overflow-hidden">
       <AnimatePresence>
         <motion.div
           key={index}
@@ -123,7 +123,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.2, delay: 0.5 }}
-          className="text-4xl md:text-6xl font-bold mb-4"
+          className="text-4xl lg:text-6xl font-bold mb-4"
         >
           {slides[index].heading}
         </motion.h1>
@@ -133,7 +133,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.7 }}
-          className="text-left text-xl md:text-2xl max-w-xl p-2 pt-0"
+          className="text-left text-xl lg:text-2xl max-w-xl p-2 pt-0"
         >
           {slides[index].subtext}
         </motion.p>
@@ -148,11 +148,11 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
             <div className="flex gap-2">
               <Button
                 onClick={onOpenDialog}
-                className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full md:p-6 md:text-lg tracking-widest"
+                className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full lg:p-6 lg:text-lg tracking-widest"
               >
                 <CalendarRange className="w-4 h-4" /> {appointmentText}
               </Button>
-              <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full md:p-6 md:text-lg tracking-widest">
+              <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full lg:p-6 lg:text-lg tracking-widest">
                 <Phone className="w-4 h-4" /> {contactText}
               </Button>
             </div>

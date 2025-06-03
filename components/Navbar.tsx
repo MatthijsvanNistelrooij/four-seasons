@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className="flex justify-between items-center p-4 sticky top-0 bg-white text-black border-gray-700 shadow-lg z-50">
 
       <Link href={"/"} className="text-black px-1 py-2 transition-all ml-4">
-        <Image src={image} height={100} width={410} alt="Logo" />
+        <Image src={image} height={100} width={400} alt="Logo" />
       </Link>
 
       <div className="hidden lg:flex gap-8 ml-8 items-center">

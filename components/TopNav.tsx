@@ -7,7 +7,7 @@ const TopNav = () => {
   const [openDialog, setOpenDialog] = useState(false)
 
   return (
-    <div className="bg-[#e9207e] z-50">
+    <div className="bg-[#e9207e] z-50 hidden md:block">
       <div className="container mx-auto relative flex items-center justify-between px-4 py-3">
         <div className="flex gap-4">
           <FaFacebookF className="text-white font-bold cursor-pointer hover:text-black" />

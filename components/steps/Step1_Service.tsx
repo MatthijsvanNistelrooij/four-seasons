@@ -101,7 +101,7 @@ export const Step1_Service = ({ value, onChange, onNext }: Props) => {
         <div ref={listRef} className="overflow-y-auto max-h-96">
           {/* Knippen */}
           <div>
-            <h4 className="px-4 py-2 font-semibold text-gray-900 mt-3 border-b border-gray-200 flex justify-center">
+            <h4 className="px-4 py-2 font-semibold text-gray-500 mt-3 border-b border-gray-200 flex justify-center">
               Knippen
             </h4>
             {knippen.map((service) => (
@@ -125,7 +125,7 @@ export const Step1_Service = ({ value, onChange, onNext }: Props) => {
 
           {/* Huidverzorging */}
           <div>
-            <h4 className="px-4 py-2 font-semibold text-gray-900 border-b border-gray-200 flex justify-center">
+            <h4 className="px-4 py-2 font-semibold text-gray-500 border-b border-gray-200 flex justify-center">
               Huidverzorging
             </h4>
             {huidverzorging.map((service) => (
@@ -149,7 +149,7 @@ export const Step1_Service = ({ value, onChange, onNext }: Props) => {
 
           {/* Manicure */}
           <div>
-            <h4 className="px-4 py-2 font-semibold text-gray-900 border-b border-gray-200 flex justify-center">
+            <h4 className="px-4 py-2 font-semibold text-gray-500 border-b border-gray-200 flex justify-center">
               Manicure
             </h4>
             {manicure.map((service) => (

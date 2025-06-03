@@ -19,12 +19,20 @@ import { Step2_Barber } from "./steps/Step2_Barber"
 import { Step3_Date } from "./steps/Step3_Date"
 import { Step4_Time } from "./steps/Step4_Time"
 import { Step5_Contact } from "./steps/Step5_Contact"
-import { CalendarRange } from "lucide-react"
 import { createAppointment } from "@/appwrite"
 
-export function AppointmentDialog() {
+type AppointmentDialogProps = {
+  title: string
+  open: boolean
+  onOpenChange: (open: boolean) => void
+}
+
+export function AppointmentDialog({
+  title,
+  open,
+  onOpenChange,
+}: AppointmentDialogProps) {
   const [step, setStep] = useState(1)
-  const [open, setOpen] = useState(false)
 
   const next = () => setStep((s) => Math.min(s + 1, 6))
   const back = () => setStep((s) => Math.max(s - 1, 1))
@@ -79,7 +87,7 @@ export function AppointmentDialog() {
         email: "",
         phone: "",
       })
-      setOpen(false)
+      onOpenChange(false) // close the dialog controlled by parent
       setStep(1)
     } catch (error) {
       console.error("Failed to submit appointment", error)
@@ -107,11 +115,10 @@ export function AppointmentDialog() {
   }, [formData.name, formData.email, formData.phone, rememberData])
 
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
+    <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogTrigger asChild>
-        <Button className="bg-[#e9207e] hover:bg-[#e9207e] rounded-full text-white">
-          <CalendarRange />
-          MAAK EEN AFSPRAAK
+        <Button className="bg-[#e9207e] hover:bg-[#e9207e] rounded-full text-white shadow-none text-lg">
+          {title}
         </Button>
       </DialogTrigger>
       <DialogContent className="sm:max-w-lg !bg-white !rounded-xl border min-h-[620px] select-none">

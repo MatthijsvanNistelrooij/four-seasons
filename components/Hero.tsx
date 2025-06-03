@@ -17,7 +17,7 @@ const slides = [
     image: hero1,
     heading: "Kapsalon Four Seasons",
     subtext:
-      "Dames & herenkapper - Persoonlijke aandacht - 35+ jaar ervaring - Gespecialilseerd in opsteken, föhnen, stylen, verven, highlights en balayages",
+      "Dames & herenkapper - Persoonlijke aandacht - 35+ jaar ervaring - Gespecialiseerd in opsteken, föhnen, stylen, verven, highlights en balayages",
   },
   {
     image: hero2,

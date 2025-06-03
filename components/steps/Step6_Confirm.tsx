@@ -1,12 +1,11 @@
-// components/steps/Step6_Confirm.tsx
-
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Check, ChevronLeft } from "lucide-react"
+import { Check, ChevronLeft, Loader2 } from "lucide-react"
 
 type FormDataType = {
   service: string
   barber: string
-  date: Date // Note date is Date type here
+  date: Date
   time: string
   name: string
   email: string
@@ -16,14 +15,24 @@ type FormDataType = {
 interface Props {
   data: FormDataType
   onBack: () => void
-  onSubmit: () => void
+  onSubmit: () => Promise<void> // make sure the parent function returns a Promise
 }
 
 export const Step6_Confirm = ({ data, onBack, onSubmit }: Props) => {
   const { service, barber, date, time, email, phone, name } = data
+  const [isSubmitting, setIsSubmitting] = useState(false)
+
+  const handleSubmit = async () => {
+    setIsSubmitting(true)
+    try {
+      await onSubmit()
+    } finally {
+      setIsSubmitting(false)
+    }
+  }
 
   return (
-    <div className="">
+    <div>
       <h3 className="text-sm font-light text-gray-800 mb-3">
         Bevestig uw afspraak
       </h3>
@@ -45,7 +54,7 @@ export const Step6_Confirm = ({ data, onBack, onSubmit }: Props) => {
             </dd>
           </div>
           <div>
-            <dt className="font-light text-gray-400">Name</dt>
+            <dt className="font-light text-gray-400">Naam</dt>
             <dd className="mt-1 text-gray-900">{name || "-"}</dd>
           </div>
           <div>
@@ -69,11 +78,16 @@ export const Step6_Confirm = ({ data, onBack, onSubmit }: Props) => {
           Wijzigen
         </Button>
         <Button
-          onClick={onSubmit}
-          className="bg-blue-500 hover:bg-blue-600 text-white rounded"
+          onClick={handleSubmit}
+          disabled={isSubmitting}
+          className="bg-blue-500 hover:bg-blue-600 text-white rounded flex items-center"
         >
           Verzenden
-          <Check className="ml-1" />
+          {isSubmitting ? (
+            <Loader2 className="ml-2 h-4 w-4 animate-spin" />
+          ) : (
+            <Check className="ml-2 h-4 w-4" />
+          )}
         </Button>
       </div>
     </div>

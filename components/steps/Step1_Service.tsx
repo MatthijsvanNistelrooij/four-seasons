@@ -112,8 +112,8 @@ export const Step1_Service = ({ value, onChange, onNext }: Props) => {
                 className={clsx(
                   "w-full border-b border-gray-200 px-4 py-3 flex justify-between items-center cursor-pointer transition text-gray-700 text-sm font-medium",
                   value === service.name
-                    ? "bg-blue-500 text-white"
-                    : "hover:bg-blue-50"
+                    ? "bg-[#e9207e] text-white"
+                    : "hover:bg-pink-50"
                 )}
               >
                 <span>{service.name}</span>
@@ -136,8 +136,8 @@ export const Step1_Service = ({ value, onChange, onNext }: Props) => {
                 className={clsx(
                   "w-full border-b border-gray-200 px-4 py-3 flex justify-between items-center cursor-pointer transition text-gray-700 text-sm font-medium",
                   value === service.name
-                    ? "bg-blue-500 text-white"
-                    : "hover:bg-blue-50"
+                    ? "bg-[#e9207e] text-white"
+                    : "hover:bg-pink-50"
                 )}
               >
                 <span>{service.name}</span>
@@ -160,8 +160,8 @@ export const Step1_Service = ({ value, onChange, onNext }: Props) => {
                 className={clsx(
                   "w-full border-b border-gray-200 px-4 py-3 flex justify-between items-center cursor-pointer transition text-gray-700 text-sm font-medium",
                   value === service.name
-                    ? "bg-blue-500 text-white"
-                    : "hover:bg-blue-50"
+                    ? "bg-[#e9207e] text-white"
+                    : "hover:bg-pink-50"
                 )}
               >
                 <span>{service.name}</span>
@@ -186,7 +186,7 @@ export const Step1_Service = ({ value, onChange, onNext }: Props) => {
         <Button
           onClick={handleNext}
           disabled={!value}
-          className="hover:bg-blue-600 bg-blue-500 text-white rounded"
+          className="hover:bg-pink-600 bg-[#e9207e] text-white rounded"
         >
           Volgende
           <ChevronRight />

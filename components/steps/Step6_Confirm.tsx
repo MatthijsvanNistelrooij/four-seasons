@@ -80,7 +80,7 @@ export const Step6_Confirm = ({ data, onBack, onSubmit }: Props) => {
         <Button
           onClick={handleSubmit}
           disabled={isSubmitting}
-          className="bg-blue-500 hover:bg-blue-600 text-white rounded flex items-center"
+          className="hover:bg-pink-600 bg-[#e9207e] text-white rounded"
         >
           Verzenden
           {isSubmitting ? (

@@ -47,8 +47,8 @@ export const Step2_Barber = ({ value, onChange, onNext, onBack }: Props) => {
               className={clsx(
                 "w-full border-b border-gray-200 rounded-md px-4 py-2 flex items-center justify-start text-sm font-medium cursor-pointer transition",
                 value === barber.name
-                  ? "bg-blue-500 text-white border-blue-100"
-                  : "hover:bg-blue-50"
+                  ? "bg-[#e9207e] text-white border-pink-100"
+                  : "hover:bg-pink-50"
               )}
               onClick={() => onChange(barber.name)}
             >
@@ -73,7 +73,7 @@ export const Step2_Barber = ({ value, onChange, onNext, onBack }: Props) => {
         <Button
           onClick={handleNext}
           disabled={!value}
-          className="hover:bg-blue-600 bg-blue-500 text-white rounded"
+          className="hover:bg-pink-600 bg-[#e9207e] text-white rounded"
         >
           Volgende
           <ChevronRight />

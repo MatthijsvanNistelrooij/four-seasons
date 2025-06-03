@@ -95,8 +95,8 @@ export const Step3_Date = ({ date, onDateChange, onNext, onBack }: Props) => {
                   key={d.toDateString()}
                   className={`w-full border-b pl-4 text-gray-700 rounded-md py-3 cursor-pointer transition ${
                     date && isSameDay(date, d)
-                      ? "bg-blue-500 text-white"
-                      : "hover:bg-blue-50"
+                      ? "bg-[#e9207e] text-white"
+                      : "hover:bg-pink-50"
                   }`}
                   onClick={() => onDateChange(d)}
                 >
@@ -119,8 +119,8 @@ export const Step3_Date = ({ date, onDateChange, onNext, onBack }: Props) => {
                   key={d.toDateString()}
                   className={`w-full pl-4 border-b text-gray-700 rounded-md py-3 cursor-pointer transition ${
                     date && isSameDay(date, d)
-                      ? "bg-blue-500 text-white border-blue-500"
-                      : "hover:bg-blue-50"
+                      ? "bg-[#e9207e] text-white"
+                      : "hover:bg-pink-50"
                   }`}
                   onClick={() => onDateChange(d)}
                 >
@@ -143,8 +143,8 @@ export const Step3_Date = ({ date, onDateChange, onNext, onBack }: Props) => {
                   key={d.toDateString()}
                   className={`w-full pl-4 border-b text-gray-700 rounded-md py-3 cursor-pointer transition ${
                     date && isSameDay(date, d)
-                      ? "bg-blue-500 text-white border-blue-500"
-                      : "hover:bg-blue-50"
+                      ? "bg-[#e9207e] text-white"
+                      : "hover:bg-pink-50"
                   }`}
                   onClick={() => onDateChange(d)}
                 >
@@ -178,7 +178,7 @@ export const Step3_Date = ({ date, onDateChange, onNext, onBack }: Props) => {
         <Button
           onClick={handleNext}
           disabled={!date}
-          className="hover:bg-blue-600 bg-blue-500 text-white rounded"
+          className="hover:bg-pink-600 bg-[#e9207e] text-white rounded"
         >
           Volgende
           <ChevronRight />

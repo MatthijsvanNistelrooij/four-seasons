@@ -102,7 +102,7 @@ export const Step5_Contact = ({
         <Button
           onClick={handleNext}
           disabled={!name || !email}
-          className="hover:bg-blue-600 bg-blue-500 text-white rounded"
+          className="hover:bg-pink-600 bg-[#e9207e] text-white rounded"
         >
           Volgende
           <ChevronRight />

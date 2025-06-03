@@ -16,11 +16,13 @@ export default function Home() {
     <div className="font-sans text-gray-800">
       {/* Hero */}
       <Hero onOpenDialog={() => setOpenDialog(true)} />
-      <AppointmentDialog
-        open={openDialog}
-        onOpenChange={setOpenDialog}
-        title="MAAK EEN AFSPRAAK"
-      />
+      <div className="hidden">
+        <AppointmentDialog
+          open={openDialog}
+          onOpenChange={setOpenDialog}
+          title="MAAK EEN AFSPRAAK"
+        />
+      </div>
 
       {/* Section 1 */}
       <section className="flex flex-col md:flex-row items-center py-20 px-1 md:px-16">

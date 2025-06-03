@@ -84,7 +84,6 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
 
   return (
     <section className="relative h-[80vh] bg-black overflow-hidden">
-      {/* Animated background image */}
       <AnimatePresence>
         <motion.div
           key={index}
@@ -104,7 +103,6 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
         </motion.div>
       </AnimatePresence>
 
-      {/* Chevron navigation buttons */}
       <button
         aria-label="Previous slide"
         onClick={goToPrevious}

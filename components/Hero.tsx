@@ -138,22 +138,24 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
           {slides[index].subtext}
         </motion.p>
 
-        <div className="flex gap-4 mt-6">
+        <div className="mt-6">
           <motion.div
             key={`contact-${index}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
           >
-            <Button
-              onClick={onOpenDialog}
-              className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full mr-3"
-            >
-              <CalendarRange className="mr-1 w-4 h-4" /> {appointmentText}
-            </Button>
-            <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full">
-              <Phone className="mr-1 w-4 h-4" /> {contactText}
-            </Button>
+            <div className="flex flex-col md:flex-row gap-2">
+              <Button
+                onClick={onOpenDialog}
+                className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full"
+              >
+                <CalendarRange className="w-4 h-4" /> {appointmentText}
+              </Button>
+              <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full">
+                <Phone className="w-4 h-4" /> {contactText}
+              </Button>
+            </div>
           </motion.div>
         </div>
       </div>

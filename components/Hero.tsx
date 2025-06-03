@@ -105,14 +105,14 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
       <button
         aria-label="Previous slide"
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white rounded-full p-2 z-20"
+        className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white p-2 py-4 z-20"
       >
         <ChevronLeft className="w-6 h-6" />
       </button>
       <button
         aria-label="Next slide"
         onClick={goToNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white rounded-full p-2 z-20"
+        className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white p-2 py-4 z-20"
       >
         <ChevronRight className="w-6 h-6" />
       </button>

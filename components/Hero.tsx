@@ -91,16 +91,6 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 1 }}
-          drag="x"
-          dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={0.2}
-          onDragEnd={(event, info) => {
-            if (info.offset.x < -50) {
-              goToNext()
-            } else if (info.offset.x > 50) {
-              goToPrevious()
-            }
-          }}
         >
           <Image
             src={slides[index].image}
@@ -160,13 +150,31 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
                 onClick={onOpenDialog}
                 className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full md:p-6 md:text-lg tracking-widest"
               >
-                <CalendarRange className="w-4 h-4" /> {appointmentText}.
+                <CalendarRange className="w-4 h-4" /> {appointmentText}
               </Button>
               <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full md:p-6 md:text-lg tracking-widest">
                 <Phone className="w-4 h-4" /> {contactText}
               </Button>
             </div>
           </motion.div>
+
+          <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 flex gap-4">
+            {slides.map((_, i) => (
+              <button
+                key={i}
+                onClick={() => {
+                  setIndex(i)
+                  startAutoSlide()
+                }}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                  index === i
+                    ? "border-2 border-white bg-transparent"
+                    : "bg-gray-800 border border-transparent"
+                }`}
+                aria-label={`Go to slide ${i + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

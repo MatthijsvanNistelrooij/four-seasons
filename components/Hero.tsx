@@ -82,7 +82,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
   const contactText = "CONTACT"
 
   return (
-    <section className="relative h-[80vh] bg-black overflow-hidden">
+    <section className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] bg-black overflow-hidden">
       <AnimatePresence>
         <motion.div
           key={index}

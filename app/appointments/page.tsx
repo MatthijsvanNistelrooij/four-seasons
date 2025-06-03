@@ -50,7 +50,7 @@ const Appointments = () => {
               <TableHead>Service</TableHead>
               <TableHead>Datum</TableHead>
               <TableHead>Tijd</TableHead>
-              <TableHead>E-mail</TableHead>
+              <TableHead>Email</TableHead>
               <TableHead>Telefoon</TableHead>
             </TableRow>
           </TableHeader>

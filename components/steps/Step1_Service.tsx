@@ -10,6 +10,7 @@ type Props = {
 }
 
 const services = [
+  { name: "Heren knippen", price: "€ 28,50", category: "knippen" },
   { name: "Dames kort haar knippen", price: "€ 28,50", category: "knippen" },
   {
     name: "Dames half-lang haar knippen",
@@ -17,7 +18,7 @@ const services = [
     category: "knippen",
   },
   { name: "Dames lang haar knippen", price: "€ 37,50", category: "knippen" },
-  { name: "Heren knippen", price: "€ 28,50", category: "knippen" },
+
   { name: "Huidverzorging", price: "€45,00", category: "huidverzorging" },
   {
     name: "Vacuüm gezichtsreiniging",

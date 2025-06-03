@@ -27,7 +27,7 @@ const slides = [
   },
   {
     image: hero3,
-    heading: "Beauty Behandelingen",
+    heading: "Beauty behandelingen",
     subtext:
       "Ontspan en geniet van een luxueuze gezichtsbehandeling in Groningen",
   },
@@ -35,7 +35,7 @@ const slides = [
     image: hero4,
     heading: "Manicure behandelingen",
     subtext:
-      "Ontspan en geniet van een luxueuze manicure behandlingen in Groningen",
+      "Ontspan en geniet van een luxueuze manicure behandeling in Groningen",
   },
   {
     image: hero,
@@ -53,7 +53,6 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
 
   const startAutoSlide = () => {
-    // Clear previous interval
     if (intervalRef.current) clearInterval(intervalRef.current)
 
     // Start a new one
@@ -118,12 +117,12 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
         <ChevronRight className="w-6 h-6" />
       </button>
 
-      <div className="relative z-10 flex flex-col items-start justify-center h-full text-white px-6 md:px-16">
+      <div className="relative z-10 flex flex-col items-start justify-center h-full text-white px-6 md:px-16 ml-10">
         <motion.h1
           key={`heading-${index}`}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.2, delay: 0.1 }}
+          transition={{ duration: 0.2, delay: 0.5 }}
           className="text-4xl md:text-6xl font-bold mb-4"
         >
           {slides[index].heading}
@@ -133,8 +132,8 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
           key={`sub-${index}`}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.3 }}
-          className="text-left text-lg md:text-2xl max-w-xl p-2 pt-0"
+          transition={{ duration: 0.4, delay: 0.7 }}
+          className="text-left text-xl md:text-2xl max-w-xl p-2 pt-0"
         >
           {slides[index].subtext}
         </motion.p>
@@ -144,7 +143,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
             key={`contact-${index}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
           >
             <Button
               onClick={onOpenDialog}

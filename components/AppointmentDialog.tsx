@@ -1,5 +1,3 @@
-// components/AppointmentDialog.tsx
-
 "use client"
 
 import {
@@ -112,7 +110,7 @@ export function AppointmentDialog({
     } else {
       localStorage.removeItem("contact")
     }
-  }, [formData.name, formData.email, formData.phone, rememberData])
+  }, [formData.name, formData.email, formData.phone, rememberData, formData])
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>

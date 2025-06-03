@@ -150,7 +150,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
                 onClick={onOpenDialog}
                 className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full md:p-6 md:text-lg tracking-widest"
               >
-                <CalendarRange className="w-4 h-4" /> {appointmentText}
+                <CalendarRange className="w-4 h-4" /> {appointmentText}.
               </Button>
               <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full md:p-6 md:text-lg tracking-widest">
                 <Phone className="w-4 h-4" /> {contactText}

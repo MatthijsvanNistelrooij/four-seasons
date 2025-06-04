@@ -104,20 +104,20 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
 
       <div className="flex container w-full h-full mx-auto items-center py-4">
         <div className="w-full">
-          <Button
+          <button
             aria-label="Previous slide"
             onClick={goToPrevious}
-            className="hidden md:flex absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-80 hover:bg-opacity-60 text-white p-2 py-4 z-20"
+            className="hidden md:flex absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white p-2 py-4 z-20"
           >
             <ChevronLeft className="w-6 h-6" />
-          </Button>
-          <Button
+          </button>
+          <button
             aria-label="Next slide"
             onClick={goToNext}
             className="hidden md:flex absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-40 hover:bg-opacity-60 text-white p-2 py-4 z-20"
           >
             <ChevronRight className="w-6 h-6" />
-          </Button>
+          </button>
 
           <div className="relative z-10 flex flex-col items-start justify-center h-full text-white">
             <motion.h1
@@ -163,27 +163,26 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
                   </Button>
                 </div>
               </motion.div>
-
-              <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 z-20 flex gap-5">
-                {slides.map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => {
-                      setIndex(i)
-                      startAutoSlide()
-                    }}
-                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                      index === i
-                        ? "border-2 border-white bg-transparent"
-                        : "bg-gray-800 border-2 border-transparent"
-                    }`}
-                    aria-label={`Go to slide ${i + 1}`}
-                  />
-                ))}
-              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 flex gap-5">
+        {slides.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => {
+              setIndex(i)
+              startAutoSlide()
+            }}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === i
+                ? "border-2 border-white bg-transparent"
+                : "bg-gray-800 border-2 border-transparent"
+            }`}
+            aria-label={`Go to slide ${i + 1}`}
+          />
+        ))}
       </div>
     </section>
   )

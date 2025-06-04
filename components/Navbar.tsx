@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div className="sticky top-0 shadow-lg z-50">
       <div className="flex container mx-auto justify-between items-center py-4 bg-white text-black border-gray-700">
-        <Link href={"/"} className="text-black px-1 py-2 transition-all ml-4">
+        <Link href={"/"} className="text-black py-2 transition-all">
           <Image src={image} height={100} width={400} alt="Logo" />
         </Link>
 

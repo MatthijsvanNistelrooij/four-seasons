@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Four Seasons | Ervaren kapper",
+  title: "Four Seasons | Ervaren kapper en beauty specialist in Groningen",
   description: "Four Seasons Kapper Groningen",
 }
 

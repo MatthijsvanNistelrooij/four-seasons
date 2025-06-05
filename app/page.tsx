@@ -44,8 +44,8 @@ export default function Home() {
         </div>
       </section>
       {/* Section 2 with CTA */}
-      <section className="flex flex-col lg:flex-row items-center py-20 px-6 md:px-16 bg-gray-100">
-        <div className="md:w-1/2 mb-10 md:mb-0">
+      <section className="flex flex-col lg:flex-row items-center py-20 px-6 lg:px-16 bg-gray-100">
+        <div className="md:w-1/2 mb-10 lg:mb-0">
           <h2 className="text-3xl font-bold mb-4">Book an Appointment</h2>
           <p className="text-lg text-gray-700 mb-6">
             Avoid the wait and lock in your spot. Our easy online booking system

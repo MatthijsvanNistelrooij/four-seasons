@@ -52,7 +52,7 @@ export default function Home() {
             ensures youre in the chair right on time.
           </p>
           <Link
-            href={"/calendar"}
+            href={""}
             className="px-6 py-3 bg-black text-white rounded hover:bg-gray-800 transition"
           >
             Book Now
@@ -86,7 +86,7 @@ export default function Home() {
             shelf.
           </p>
           <Link
-            href={"/products"}
+            href={"/"}
             className="px-6 py-3 mt-8 w-32 border bg-black text-white rounded hover:bg-gray-800 hover:text-white transition"
           >
             Shop Now

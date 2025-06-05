@@ -9,6 +9,7 @@ import Hero from "@/components/Hero"
 import { useState } from "react"
 import { AppointmentDialog } from "@/components/AppointmentDialog"
 import GoogleReviews from "@/components/GoogleReviews"
+import Footer from "@/components/Footer"
 
 export default function Home() {
   const [openDialog, setOpenDialog] = useState(false)
@@ -97,12 +98,7 @@ export default function Home() {
       <section className="flex flex-col lg:flex-row items-center py-20 px-6 md:px-16">
         <GoogleReviews />
       </section>
-      <footer className="bg-black text-white py-8 text-center">
-        <p className="text-sm">
-          &copy; {new Date().getFullYear()} Sharp Style Barbers. All rights
-          reserved.
-        </p>
-      </footer>
+      <Footer />
     </div>
   )
 }

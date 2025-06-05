@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import logo from "../public/logo.png"
+// import matp from "../public/matp.png"
 
 const Footer = () => {
   return (
@@ -15,13 +16,28 @@ const Footer = () => {
             height={250}
             className="object-contain"
           />
+          <div className="flex w-44 mt-5">
+            Copyright © 2023 Kapsalon Four Seasons All rights reserved.
+          </div>
+          {/* <div className="flex text-xs text-gray-500 w-full mt-12 justify-start">
+            Powered by
+            <Link href={"/"}>
+              <Image
+                src={matp}
+                width={14}
+                height={14}
+                alt="logo"
+                className="m-1"
+              />
+            </Link>
+          </div> */}
         </div>
 
         {/* Links and info */}
         <div className="flex flex-col md:flex-row justify-end flex-1 gap-12">
           {/* Pagina’s */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Pagina’s</h3>
+            <h3 className="font-semibold mb-4 text-[#e9207e]">Pagina’s</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/" className="hover:underline">
@@ -58,8 +74,8 @@ const Footer = () => {
 
           {/* Contact & Openingstijden */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">
-              Openingstijden & Contact
+            <h3 className="font-semibold mb-4 text-[#e9207e]">
+              Openingstijden & contact
             </h3>
             <ul className="space-y-1 text-sm">
               <li>Ma: 12:00 – 18:00</li>

@@ -8,6 +8,7 @@ import Link from "next/link"
 import Hero from "@/components/Hero"
 import { useState } from "react"
 import { AppointmentDialog } from "@/components/AppointmentDialog"
+import GoogleReviews from "@/components/GoogleReviews"
 
 export default function Home() {
   const [openDialog, setOpenDialog] = useState(false)
@@ -23,9 +24,8 @@ export default function Home() {
           title="MAAK EEN AFSPRAAK"
         />
       </div>
-
       {/* Section 1 */}
-      <section className="flex flex-col md:flex-row items-center py-20 px-1 md:px-16">
+      <section className="flex flex-col lg:flex-row items-center py-20 px-1 md:px-16">
         <div className="md:w-1/2 md:pl-2 m-5">
           <Image
             width={500}
@@ -43,9 +43,8 @@ export default function Home() {
           </p>
         </div>
       </section>
-
       {/* Section 2 with CTA */}
-      <section className="flex flex-col md:flex-row items-center py-20 px-6 md:px-16 bg-gray-100">
+      <section className="flex flex-col lg:flex-row items-center py-20 px-6 md:px-16 bg-gray-100">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h2 className="text-3xl font-bold mb-4">Book an Appointment</h2>
           <p className="text-lg text-gray-700 mb-6">
@@ -69,8 +68,7 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <section className="flex flex-col md:flex-row items-center py-20 px-6 md:px-16">
+      <section className="flex flex-col lg:flex-row items-center py-20 px-6 md:px-16">
         <div className="md:w-1/2 md:pl-12">
           <Image
             width={500}
@@ -96,6 +94,9 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="flex flex-col lg:flex-row items-center py-20 px-6 md:px-16">
+        <GoogleReviews />
+      </section>
       <footer className="bg-black text-white py-8 text-center">
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Sharp Style Barbers. All rights

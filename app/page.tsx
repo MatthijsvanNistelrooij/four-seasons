@@ -25,17 +25,17 @@ export default function Home() {
         />
       </div>
       <section className="w-full">
-        <div className="flex container flex-col lg:flex-row mx-auto items-center py-48 px-4 gap-8">
-          <div className="w-full">
+        <div className="flex container flex-col lg:flex-row mx-auto items-start py-48 px-4 gap-8">
+          <div className="w-full h-[500px] flex p-5">
             <Image
               width={1200}
               height={1200}
               src={logo_header}
               alt="Our Barbers"
-              className="rounded-xl"
+              className="rounded-3xl"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full p-5">
             <h2 className="text-3xl font-bold mb-4">
               Ervaren dames & herenkapper in Groningen
             </h2>
@@ -55,17 +55,17 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-gray-200">
-        <div className="flex container flex-col lg:flex-row mx-auto items-center py-48 px-4 gap-8">
-          <div className="w-full">
+        <div className="flex container flex-col lg:flex-row mx-auto items-start py-48 px-4 gap-8">
+          <div className="w-full h-[500px] flex p-5">
             <Image
               width={1200}
               height={1200}
               src={treatment_1}
               alt="Our Barbers"
-              className="rounded-xl"
+              className="rounded-3xl"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full p-5">
             <h2 className="text-3xl font-bold mb-4">
               Ook voor beauty behandelingen
             </h2>
@@ -81,17 +81,17 @@ export default function Home() {
       </section>
 
       <section className="w-full">
-        <div className="flex container flex-col lg:flex-row mx-auto items-center py-48 px-4 gap-8">
-          <div className="w-full h-full">
+        <div className="flex container flex-col lg:flex-row mx-auto items-start py-48 px-4 gap-8">
+          <div className="w-full h-[500px] flex p-5">
             <Image
               width={1200}
               height={1200}
               src={shop}
               alt="Our Barbers"
-              className="rounded-xl"
+              className="rounded-3xl"
             />
           </div>
-          <div className="w-full">
+          <div className="w-full p-5">
             <h2 className="text-3xl font-bold mb-4">
               Verven, knippen, in model brengen en meer!
             </h2>

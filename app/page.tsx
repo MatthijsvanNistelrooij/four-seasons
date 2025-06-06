@@ -60,7 +60,6 @@ export default function Home() {
 
       <section className="w-full bg-gray-200">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
-          {/* Image Block */}
           <div className="w-full lg:w-1/2 h-64 lg:h-[500px]">
             <Image
               src={treatment_1}
@@ -71,7 +70,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Text Block */}
           <div className="w-full lg:w-1/2 flex items-start">
             <div className="max-w-xl">
               <h2 className="text-3xl font-bold mb-4">
@@ -103,7 +101,6 @@ export default function Home() {
 
       <section className="w-full bg-white">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
-          {/* Image Block */}
           <div className="w-full lg:w-1/2 h-64 lg:h-[500px]">
             <Image
               width={1200}
@@ -114,7 +111,6 @@ export default function Home() {
             />
           </div>
 
-          {/* Text Block */}
           <div className="w-full lg:w-1/2 flex items-start">
             <div className="max-w-xl">
               <h2 className="text-3xl font-bold mb-4">
@@ -136,7 +132,7 @@ export default function Home() {
 
       <section className="w-full bg-[#e9207e]">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
-          <div className="w-full h-[600px]">
+          <div className="w-full h-[350px] lg:h-[600px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252.76340790475925!2d6.561769514987872!3d53.21515910574965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c9cd28d615ca8b%3A0x665498987f6ab9d4!2sKapsalon%20Four%20Seasons!5e1!3m2!1sen!2snl!4v1749164707339!5m2!1sen!2snl"
               width="100%"

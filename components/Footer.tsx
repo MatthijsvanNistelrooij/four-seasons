@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import logo from "../public/logo.png"
-// import matp from "../public/matp.png"
+import matp from "../public/matp.png"
 
 const Footer = () => {
   return (
@@ -19,18 +19,6 @@ const Footer = () => {
           <div className="flex w-44 mt-5">
             Copyright © 2025 Kapsalon Four Seasons All rights reserved.
           </div>
-          {/* <div className="flex text-xs text-gray-500 w-full mt-12 justify-start">
-            Powered by
-            <Link href={"/"}>
-              <Image
-                src={matp}
-                width={14}
-                height={14}
-                alt="logo"
-                className="m-1"
-              />
-            </Link>
-          </div> */}
         </div>
 
         {/* Links and info */}
@@ -103,6 +91,18 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+        </div>
+        <div className="flex text-xs text-gray-500 w-full mt-12 justify-center">
+          Powered by
+          <Link href={"/"}>
+            <Image
+              src={matp}
+              width={14}
+              height={14}
+              alt="logo"
+              className="m-1 ml-2"
+            />
+          </Link>
         </div>
       </div>
     </footer>

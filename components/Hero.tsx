@@ -91,7 +91,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
         priority
       />
 
-      <div className="flex container w-full h-full mx-auto items-center py-4">
+      <div className="flex container w-full h-full mx-auto items-center py-4 px-8">
         <div className="w-full">
           <button
             aria-label="Previous slide"
@@ -108,7 +108,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
             <ChevronRight className="w-6 h-6" />
           </button>
 
-          <div className="p-8 sm:p-0 relative z-10 flex flex-col items-start justify-center h-full text-white">
+          <div className="relative z-10 flex flex-col items-start justify-center h-full text-white">
             <motion.h1
               key={`heading-${index}`}
               initial={{ opacity: 0, y: 30 }}

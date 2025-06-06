@@ -133,7 +133,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
               </h1>
             </motion.div>
 
-            <div className="mt-6 md:mt-12">
+            <div className="mt-6 md:mt-12 mb-20">
               <motion.div
                 key={`contact-${index}`}
                 initial={{ opacity: 0, y: 20 }}

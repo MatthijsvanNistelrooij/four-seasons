@@ -27,20 +27,20 @@ export default function Home() {
         />
       </div>
 
-      <section className="w-full bg-white">
-        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-5 lg:gap-12">
+      <section className="w-full bg-white ">
+        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 md:px-20 py-24 gap-5 lg:gap-12">
           <div className="w-full">
             <Image
-              width={1200}
-              height={1200}
               src={logo_header}
               alt="logo"
+              width={1200}
+              height={1200}
               className="w-full h-full object-cover rounded-xl shadow-2xl"
             />
           </div>
 
           <div className="w-full">
-            <div className="max-w-xl">
+            <div className="max-w-xl mb-40">
               <h2 className="text-xl lg:text-3xl font-bold mb-4">
                 Ervaren dames & herenkapper in Groningen
               </h2>
@@ -61,19 +61,19 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-gray-200">
-        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-5 lg:gap-12">
+        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 md:px-20 py-24 gap-5 lg:gap-12">
           <div className="w-full">
             <Image
               src={treatment_1}
-              alt="Our Barbers"
-              width={1200}
-              height={1200}
+              alt="treatment"
+              width={1000}
+              height={1000}
               className="w-full h-full object-cover rounded-xl shadow-2xl"
             />
           </div>
 
           <div className="w-full">
-            <div className="max-w-xl">
+            <div className="max-w-xl mb-40">
               <h2 className="text-xl lg:text-3xl font-bold mb-4">
                 Ook voor beauty behandelingen
               </h2>
@@ -102,8 +102,8 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-white">
-        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-5 lg:gap-12">
-          <div className="w-full h-full">
+        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 md:px-20 gap-5 lg:gap-12">
+          <div className="w-full">
             <Image
               width={1200}
               height={1200}
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
 
           <div className="w-full">
-            <div className="max-w-xl">
+            <div className="max-w-xl mb-20">
               <h2 className="text-xl lg:text-3xl font-bold mb-4">
                 Verven, knippen, in model brengen en meer!
               </h2>
@@ -133,7 +133,7 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-[#e9207e]">
-        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
+        <div className="flex flex-col lg:flex-row container mx-auto items-stretch  md:px-20 px-8 py-24 gap-12">
           <div className="w-full h-[350px] lg:h-[600px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252.76340790475925!2d6.561769514987872!3d53.21515910574965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c9cd28d615ca8b%3A0x665498987f6ab9d4!2sKapsalon%20Four%20Seasons!5e1!3m2!1sen!2snl!4v1749164707339!5m2!1sen!2snl"
@@ -197,12 +197,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" mx-auto flex flex-col justify-center py-40 p-8">
+      <section className=" mx-auto flex flex-col justify-center py-40 md:px-20 p-8">
         <GoogleReviews />
       </section>
 
-      <section className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-14 py-32 bg-[#e9207e]">
-        <div className="flex container h-full mx-auto items-center py-48 px-8">
+      <section className="flex flex-col lg:flex-row items-center lg:items-start justify-center  gap-14 py-32 bg-[#e9207e]">
+        <div className="flex container h-full mx-auto items-center py-48 md:px-20 px-8">
           <div className="w-full">
             <h2 className="text-4xl font-bold mb-20 text-center text-white">
               Onze Prijzen

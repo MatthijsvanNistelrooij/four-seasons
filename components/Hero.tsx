@@ -98,7 +98,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
           priority
         />
       </motion.div>
-      <div className="flex container w-full h-full mx-auto items-center py-4 px-8">
+      <div className="flex container w-full h-full mx-auto items-center py-4 px-8 md:px-20">
         <div className="w-full">
           <button
             aria-label="Previous slide"

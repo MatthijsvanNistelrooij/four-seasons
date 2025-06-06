@@ -17,7 +17,7 @@ const Footer = () => {
             className="object-contain"
           />
           <div className="flex w-44 mt-5">
-            Copyright © 2023 Kapsalon Four Seasons All rights reserved.
+            Copyright © 2025 Kapsalon Four Seasons All rights reserved.
           </div>
           {/* <div className="flex text-xs text-gray-500 w-full mt-12 justify-start">
             Powered by

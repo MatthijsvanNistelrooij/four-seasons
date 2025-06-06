@@ -120,7 +120,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
               key={`heading-${index}`}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.2, delay: 0.2 }}
+              transition={{ duration: 0.4, delay: 0.5 }}
               className="text-4xl lg:text-6xl font-bold mb-2"
             >
               {slides[index].heading}
@@ -128,9 +128,9 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
 
             <motion.div
               key={`sub-${index}`}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4, delay: 0.4 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
               className="text-left text-xl lg:text-2xl max-w-xl"
             >
               <h1 className="leading-[1.8rem] md:leading-[2.3rem] md:mt-4">
@@ -143,7 +143,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
             <div className="mt-6 md:mt-12">
               <motion.div
                 key={`contact-${index}`}
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
               >

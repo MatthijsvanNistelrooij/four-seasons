@@ -29,13 +29,13 @@ export default function Home() {
 
       <section className="w-full bg-white ">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 md:px-20 py-24 gap-5 lg:gap-12">
-          <div className="w-full">
+          <div className="w-full h-[400px] mb-10">
             <Image
               src={logo_header}
               alt="logo"
-              width={1200}
-              height={1200}
-              className="w-full h-full object-cover rounded-xl shadow-2xl"
+              width={1400}
+              height={1400}
+              className="object-cover h-[400px] rounded-xl shadow-2xl"
             />
           </div>
 
@@ -62,16 +62,15 @@ export default function Home() {
 
       <section className="w-full bg-gray-200">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 md:px-20 py-24 gap-5 lg:gap-12">
-          <div className="w-full">
+          <div className="w-full h-[400px] mb-10">
             <Image
               src={treatment_1}
-              alt="treatment"
-              width={1000}
-              height={1000}
-              className="w-full h-full object-cover rounded-xl shadow-2xl"
+              alt="logo"
+              width={1400}
+              height={1400}
+              className="object-cover h-[400px] rounded-xl shadow-2xl"
             />
           </div>
-
           <div className="w-full">
             <div className="max-w-xl md:mb-40">
               <h2 className="text-xl lg:text-3xl font-bold mb-4">
@@ -102,14 +101,14 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-white">
-        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 md:px-20 gap-5 lg:gap-12">
-          <div className="w-full">
+        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 md:px-20 gap-5 lg:gap-20">
+          <div className="w-full h-[400px] mb-10">
             <Image
-              width={1200}
-              height={1200}
               src={shop}
-              alt="Our Barbers"
-              className="w-full h-full object-cover rounded-xl shadow-2xl"
+              alt="logo"
+              width={1400}
+              height={1400}
+              className="object-cover h-[400px] rounded-xl shadow-2xl"
             />
           </div>
 

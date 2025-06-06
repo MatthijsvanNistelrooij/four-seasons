@@ -41,10 +41,10 @@ export default function Home() {
 
           <div className="w-full">
             <div className="max-w-xl">
-              <h2 className="text-3xl font-bold mb-4">
+              <h2 className="text-xl lg:text-3xl font-bold mb-4">
                 Ervaren dames & herenkapper in Groningen
               </h2>
-              <p className="text-lg text-gray-600">
+              <p className="lg:text-lg text-gray-600">
                 Bij ons kun je terecht voor een professionele en betaalbare
                 knipbeurt. Wil je een nieuwe look uitproberen? Wij staan voor je
                 klaar met een passend advies. Ook als je jouw haar wil laten
@@ -73,10 +73,10 @@ export default function Home() {
           </div>
 
           <div className="w-full">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-xl lg:text-3xl font-bold mb-4">
               Ook voor beauty behandelingen
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="lg:text-lg text-gray-600">
               Je gezicht weer laten stralen? Wees klaar voor elke gelegenheid
               met onze beauty behandelingen. U bent bij ons aan het juiste adres
               voor harsen, wimpers kleuren, tijdelijke wimpers, lamineren van de
@@ -112,10 +112,10 @@ export default function Home() {
           </div>
 
           <div className="w-full">
-            <h2 className="text-3xl font-bold mb-4">
+            <h2 className="text-xl lg:text-3xl font-bold mb-4">
               Verven, knippen, in model brengen en meer!
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="lg:text-lg text-gray-600">
               Bij onze kapsalon in het hart van Groningen zijn wij specialist in
               verven, knippen, in model brengen en nog veel meer! Wij staan voor
               je klaar om aan jouw wensen te voldoen. We gebruiken alleen

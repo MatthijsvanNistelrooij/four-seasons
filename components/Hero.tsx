@@ -82,7 +82,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
   const contactText = "CONTACT"
 
   return (
-    <section className=" relative h-[60vh] md:h-[60vh] lg:h-[80vh] bg-black overflow-hidden">
+    <section className="relative h-[60vh] md:h-[60vh] lg:h-[80vh] bg-black overflow-hidden">
       <AnimatePresence>
         <motion.div
           key={index}
@@ -119,7 +119,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
             <ChevronRight className="w-6 h-6" />
           </button>
 
-          <div className="relative z-10 flex flex-col items-start justify-center h-full text-white">
+          <div className="p-5 sm:p-0 relative z-10 flex flex-col items-start justify-center h-full text-white">
             <motion.h1
               key={`heading-${index}`}
               initial={{ opacity: 0, y: 30 }}

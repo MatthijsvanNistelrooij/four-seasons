@@ -29,7 +29,7 @@ export default function Home() {
 
       <section className="w-full bg-white ">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 md:px-20 py-24 gap-5 lg:gap-12">
-          <div className="w-full h-[250px] mb-10 bg-[#e9207e] rounded-xl">
+          <div className="w-full h-[220px] mb-10 bg-[#e9207e] rounded-xl">
             <Image
               src={logo_header}
               alt="logo"
@@ -41,7 +41,7 @@ export default function Home() {
 
           <div className="w-full">
             <div className="max-w-xl md:mb-40">
-              <h2 className="text-xl lg:text-3xl font-bold mb-4">
+              <h2 className="text-2xl lg:text-3xl font-bold mb-4">
                 Ervaren dames & herenkapper in Groningen
               </h2>
               <p className="lg:text-lg text-gray-600">
@@ -62,7 +62,7 @@ export default function Home() {
 
       <section className="w-full bg-[#eaeaea]">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 md:px-20 py-24 gap-5 lg:gap-12">
-          <div className="w-full h-[400px] mb-10">
+          <div className="w-full h-[220px] mb-10">
             <Image
               src={treatment_1}
               alt="logo"
@@ -73,7 +73,7 @@ export default function Home() {
           </div>
           <div className="w-full">
             <div className="max-w-xl md:mb-40">
-              <h2 className="text-xl lg:text-3xl font-bold mb-4">
+              <h2 className="text-2xl lg:text-3xl font-bold mb-4">
                 Ook voor beauty behandelingen
               </h2>
               <p className="lg:text-lg text-gray-600">
@@ -102,7 +102,7 @@ export default function Home() {
 
       <section className="w-full bg-white">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 md:px-20 gap-5 lg:gap-20">
-          <div className="w-full h-[400px] mb-10">
+          <div className="w-full h-[220px] mb-10">
             <Image
               src={shop}
               alt="logo"
@@ -114,7 +114,7 @@ export default function Home() {
 
           <div className="w-full">
             <div className="max-w-xl md:mb-40">
-              <h2 className="text-xl lg:text-3xl font-bold mb-4">
+              <h2 className="text-2xl lg:text-3xl font-bold mb-4">
                 Verven, knippen, in model brengen en meer!
               </h2>
               <p className="lg:text-lg text-gray-600">

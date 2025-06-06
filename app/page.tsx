@@ -28,7 +28,7 @@ export default function Home() {
       </div>
 
       <section className="w-full bg-white">
-        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-4 py-24 gap-12">
+        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
           <div className="w-full lg:w-1/2 h-64 lg:h-[500px]">
             <Image
               width={1200}
@@ -59,7 +59,7 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-gray-200">
-        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-4 py-24 gap-12">
+        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
           {/* Image Block */}
           <div className="w-full lg:w-1/2 h-64 lg:h-[500px]">
             <Image
@@ -102,7 +102,7 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-white">
-        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-4 py-24 gap-12">
+        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
           {/* Image Block */}
           <div className="w-full lg:w-1/2 h-64 lg:h-[500px]">
             <Image
@@ -135,7 +135,7 @@ export default function Home() {
       </section>
 
       <section className="w-full bg-[#e9207e]">
-        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-4 py-24 gap-12">
+        <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
           <div className="w-full h-[600px]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252.76340790475925!2d6.561769514987872!3d53.21515910574965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c9cd28d615ca8b%3A0x665498987f6ab9d4!2sKapsalon%20Four%20Seasons!5e1!3m2!1sen!2snl!4v1749164707339!5m2!1sen!2snl"
@@ -203,8 +203,8 @@ export default function Home() {
         <GoogleReviews />
       </section>
 
-      <section className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-14 py-32 p-4 bg-[#e9207e]">
-        <div className="flex container h-full mx-auto items-center py-48 px-4 ">
+      <section className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-14 py-32 bg-[#e9207e]">
+        <div className="flex container h-full mx-auto items-center py-48 px-8">
           <div className="w-full">
             <h2 className="text-4xl font-bold mb-20 text-center text-white">
               Onze Prijzen

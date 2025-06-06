@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { CalendarRange, Phone, ChevronLeft, ChevronRight } from "lucide-react"
 
@@ -108,7 +108,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
             <ChevronRight className="w-6 h-6" />
           </button>
 
-          <div className="p-5 sm:p-0 relative z-10 flex flex-col items-start justify-center h-full text-white">
+          <div className="p-8 sm:p-0 relative z-10 flex flex-col items-start justify-center h-full text-white">
             <motion.h1
               key={`heading-${index}`}
               initial={{ opacity: 0, y: 30 }}

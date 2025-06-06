@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 shadow-lg z-50 bg-white">
-      <div className="flex container mx-auto justify-between items-center py-4 bg-white text-black border-gray-700 px-4">
+      <div className="flex container mx-auto justify-between items-center py-4 bg-white text-black border-gray-700 px-8">
         <Link href={"/"} className="text-black py-2 transition-all">
           <Image src={image} height={100} width={400} alt="Logo" />
         </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
 
         {isOpen && (
-          <div className="absolute top-[100%] left-0 w-full bg-white shadow-md border-t z-40 flex flex-col items-start px-6 py-4 lg:hidden">
+          <div className="absolute top-[100%] left-0 w-full bg-white shadow-md border-t z-40 flex flex-col items-start px-8 py-4 lg:hidden space-y-7">
             <Link href="/" className="py-2 text-lg font-bold w-full">
               Home
             </Link>
@@ -72,6 +72,7 @@ const Navbar = () => {
             <Link href="/" className="py-2 text-lg font-bold w-full">
               Beauty
             </Link>
+
             <Link
               href="/behandelingen"
               className="py-2 text-lg font-bold w-full text-white bg-black rounded-full text-center"

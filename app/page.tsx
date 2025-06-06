@@ -181,7 +181,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold mb-20 text-center text-white">
               Onze Prijzen
             </h2>
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-8">
               {[
                 { title: "Dames kort haar knippen", price: "€ 28,50" },
                 { title: "Dames half-lang haar knippen", price: "€ 32,50" },

@@ -82,11 +82,11 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
   const contactText = "CONTACT"
 
   return (
-    <section className="relative h-[60vh] md:h-[60vh] lg:h-[80vh] bg-black overflow-hidden">
+    <section className="relative w-full bg-black md:min-h-[80vh] overflow-hidden">
       <AnimatePresence>
         <motion.div
           key={index}
-          className="absolute inset-0 w-full h-full"
+          className="absolute inset-0 w-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -102,8 +102,10 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
         </motion.div>
       </AnimatePresence>
 
-      <div className="flex container w-full h-full mx-auto items-center py-4 px-4">
-        <div className="w-full">
+      {/* Content */}
+      <div className="flex container mx-auto h-full items-center px-4 py-16 md:py-20">
+        <div className="w-full z-10 text-white">
+          {/* Nav Buttons */}
           <button
             aria-label="Previous slide"
             onClick={goToPrevious}
@@ -119,13 +121,14 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
             <ChevronRight className="w-6 h-6" />
           </button>
 
-          <div className="relative z-10 flex flex-col items-start justify-center h-full text-white">
+          {/* Text Content */}
+          <div className="flex flex-col items-start justify-center h-full">
             <motion.h1
               key={`heading-${index}`}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.2, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold"
+              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
             >
               {slides[index].heading}
             </motion.h1>
@@ -135,38 +138,39 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.4 }}
-              className="text-left text-xl lg:text-2xl max-w-xl"
+              className="text-left text-base sm:text-lg md:text-xl lg:text-2xl max-w-xl mt-4"
             >
-              <h1 className="leading-[1.8rem] md:leading-[2.3rem] mt-2">
-                <span className="bg-black bg-opacity-30 inline">
-                  {slides[index].subtext}
-                </span>
-              </h1>
+              <p className="leading-9 bg-black bg-opacity-30 inline px-1 py-1 rounded">
+                {slides[index].subtext}
+              </p>
             </motion.div>
 
-            <div className="mt-6 lg:mt-12">
-              <motion.div
-                key={`contact-${index}`}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.6 }}
-              >
-                <div className="flex flex-col md:flex-row gap-2">
-                  <Button
-                    onClick={onOpenDialog}
-                    className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full lg:p-6 lg:text-lg tracking-widest"
-                  >
-                    <CalendarRange className="w-4 h-4" /> {appointmentText}
-                  </Button>
-                  <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full lg:p-6 lg:text-lg tracking-widest">
-                    <Phone className="w-4 h-4" /> {contactText}
-                  </Button>
-                </div>
-              </motion.div>
-            </div>
+            <motion.div
+              key={`contact-${index}`}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="mt-6 lg:mt-10"
+            >
+              <div className="flex flex-col sm:flex-row gap-3">
+                <Button
+                  onClick={onOpenDialog}
+                  className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full px-6 py-4 text-sm sm:text-base tracking-widest"
+                >
+                  <CalendarRange className="w-4 h-4 mr-2" />
+                  {appointmentText}
+                </Button>
+                <Button className="bg-[#e9207e] hover:bg-[#e9207e] transition-transform duration-200 rounded-full px-6 py-4 text-sm sm:text-base tracking-widest">
+                  <Phone className="w-4 h-4 mr-2" />
+                  {contactText}
+                </Button>
+              </div>
+            </motion.div>
           </div>
         </div>
       </div>
+
+      {/* Dots */}
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 flex gap-5">
         {slides.map((_, i) => (
           <button

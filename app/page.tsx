@@ -9,6 +9,8 @@ import { useState } from "react"
 import { AppointmentDialog } from "@/components/AppointmentDialog"
 import GoogleReviews from "@/components/GoogleReviews"
 import Footer from "@/components/Footer"
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Minus } from "lucide-react"
 
 export default function Home() {
   const [openDialog, setOpenDialog] = useState(false)
@@ -25,85 +27,105 @@ export default function Home() {
         />
       </div>
       <section className="w-full">
-        <div className="flex container flex-col lg:flex-row mx-auto items-start py-48 px-4 gap-8">
-          <div className="w-full h-[500px] flex p-5">
+        <div className="flex container flex-col lg:flex-row mx-auto items-start py-48 px-4 gap-12">
+          <div className="w-full h-[500px] flex">
             <Image
               width={1200}
               height={1200}
               src={logo_header}
               alt="Our Barbers"
-              className="rounded-3xl"
+              className="rounded-3xl object-cover w-full h-full"
             />
           </div>
-          <div className="w-full p-5">
-            <h2 className="text-3xl font-bold mb-4">
-              Ervaren dames & herenkapper in Groningen
-            </h2>
-            <p className="text-lg text-gray-600">
-              Bij ons kun je terecht voor een professionele en betaalbare
-              knipbeurt. Wil je een nieuwe look uitproberen? Wij staan voor je
-              klaar met een passend advies. Ook als je jouw haar wil laten
-              bijwerken of gewoon wilt ontspannen met een kappersbehandeling,
-              helpen we je graag. Als vertrouwde kapper in Groningen, begrijpen
-              we dat jouw tijd kostbaar is. De combinatie van ruim 35 jaar
-              ervaring en persoonlijke aandacht, maken het mogelijk om snel en
-              efficiënt te werken zonder afbreuk te doen aan de kwaliteit. Dat
-              maakt onze kapsalon zo uniek én gezellig!
-            </p>
+          <div className="w-full">
+            {/* Here's the max width wrapper */}
+            <div className="max-w-xl">
+              <h2 className="text-3xl font-bold mb-4">
+                Ervaren dames & herenkapper in Groningen
+              </h2>
+              <p className="text-lg text-gray-600">
+                Bij ons kun je terecht voor een professionele en betaalbare
+                knipbeurt. Wil je een nieuwe look uitproberen? Wij staan voor je
+                klaar met een passend advies. Ook als je jouw haar wil laten
+                bijwerken of gewoon wilt ontspannen met een kappersbehandeling,
+                helpen we je graag. Als vertrouwde kapper in Groningen,
+                begrijpen we dat jouw tijd kostbaar is. De combinatie van ruim
+                35 jaar ervaring en persoonlijke aandacht, maken het mogelijk om
+                snel en efficiënt te werken zonder afbreuk te doen aan de
+                kwaliteit. Dat maakt onze kapsalon zo uniek én gezellig!
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="w-full bg-gray-200">
-        <div className="flex container flex-col lg:flex-row mx-auto items-start py-48 px-4 gap-8">
-          <div className="w-full h-[500px] flex p-5">
+        <div className="flex container flex-col lg:flex-row mx-auto items-start py-48 px-4 gap-12">
+          <div className="w-full h-[500px] flex">
             <Image
               width={1200}
               height={1200}
               src={treatment_1}
               alt="Our Barbers"
-              className="rounded-3xl"
+              className="rounded-3xl object-cover w-full h-full"
             />
           </div>
-          <div className="w-full p-5">
-            <h2 className="text-3xl font-bold mb-4">
-              Ook voor beauty behandelingen
-            </h2>
-            <p className="text-lg text-gray-600">
-              Je gezicht weer laten stralen? Wees klaar voor elke gelegenheid
-              met onze beauty behandelingen. U bent bij ons aan het juiste adres
-              voor harsen, wimpers kleuren, tijdelijke wimpers, lamineren van de
-              wimpers en wenkbrauwen, make-up. liftende gezichtmassages,
-              gezichtsverzorgingen en wenkbrauw ontwerpen.
-            </p>
+          <div className="w-full">
+            {/* Here's the max width wrapper */}
+            <div className="max-w-xl">
+              <h2 className="text-3xl font-bold mb-4">
+                Ook voor beauty behandelingen
+              </h2>
+              <p className="text-lg text-gray-600">
+                Je gezicht weer laten stralen? Wees klaar voor elke gelegenheid
+                met onze beauty behandelingen. U bent bij ons aan het juiste
+                adres voor harsen, wimpers kleuren, tijdelijke wimpers,
+                lamineren van de wimpers en wenkbrauwen, make-up. liftende
+                gezichtmassages, gezichtsverzorgingen en wenkbrauw ontwerpen.
+              </p>
+            </div>
+            <Button className="group bg-black hover:bg-gray-900 text-white flex items-center gap-2 rounded-full mt-5 overflow-hidden relative px-4 py-2">
+              <span className="relative h-5 w-5 overflow-hidden">
+                <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-6">
+                  <Minus />
+                </span>
+                <span className="absolute inset-0 flex items-center justify-center translate-y-6 transition-transform duration-300 group-hover:translate-y-0 delay-350">
+                  <ArrowRight />
+                </span>
+              </span>
+              Meer Lezen
+            </Button>
           </div>
         </div>
       </section>
 
       <section className="w-full">
-        <div className="flex container flex-col lg:flex-row mx-auto items-start py-48 px-4 gap-8">
-          <div className="w-full h-[500px] flex p-5">
+        <div className="flex container flex-col lg:flex-row mx-auto items-start py-48 px-4 gap-12">
+          <div className="w-full h-[500px] flex">
             <Image
               width={1200}
               height={1200}
               src={shop}
               alt="Our Barbers"
-              className="rounded-3xl"
+              className="rounded-3xl object-cover w-full h-full"
             />
           </div>
-          <div className="w-full p-5">
-            <h2 className="text-3xl font-bold mb-4">
-              Verven, knippen, in model brengen en meer!
-            </h2>
-            <p className="text-lg text-gray-600">
-              Bij onze kapsalon in het hart van Groningen zijn wij specialist in
-              verven, knippen, in model brengen en nog veel meer! Wij staan voor
-              je klaar om aan jouw wensen te voldoen. We gebruiken alleen
-              hoogwaardige producten en werken met de nieuwste technieken om
-              ervoor te zorgen dat je tevreden bent met het resultaat. Maak een
-              afspraak bij onze kapper in Groningen en we helpen je graag bij
-              het bereiken van de perfecte look!
-            </p>
+          <div className="w-full">
+            {/* Here's the max width wrapper */}
+            <div className="max-w-xl">
+              <h2 className="text-3xl font-bold mb-4">
+                Verven, knippen, in model brengen en meer!
+              </h2>
+              <p className="text-lg text-gray-600">
+                Bij onze kapsalon in het hart van Groningen zijn wij specialist
+                in verven, knippen, in model brengen en nog veel meer! Wij staan
+                voor je klaar om aan jouw wensen te voldoen. We gebruiken alleen
+                hoogwaardige producten en werken met de nieuwste technieken om
+                ervoor te zorgen dat je tevreden bent met het resultaat. Maak
+                een afspraak bij onze kapper in Groningen en we helpen je graag
+                bij het bereiken van de perfecte look!
+              </p>
+            </div>
           </div>
         </div>
       </section>

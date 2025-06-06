@@ -82,25 +82,14 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
   const contactText = "CONTACT"
 
   return (
-    <section className="relative h-[60vh] md:h-[60vh] lg:h-[80vh] bg-black overflow-hidden">
-      <AnimatePresence>
-        <motion.div
-          key={index}
-          className="absolute inset-0 w-full h-full"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <Image
-            src={slides[index].image}
-            alt="Slide"
-            fill
-            className="object-cover w-full h-full opacity-70"
-            priority
-          />
-        </motion.div>
-      </AnimatePresence>
+    <section className="relative bg-black overflow-hidden w-full h-[50vh] lg:h-[80vh]">
+      <Image
+        src={slides[index].image}
+        alt="Slide"
+        fill
+        className="object-cover w-full h-full opacity-70"
+        priority
+      />
 
       <div className="flex container w-full h-full mx-auto items-center py-4">
         <div className="w-full">

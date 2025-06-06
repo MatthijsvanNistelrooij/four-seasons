@@ -82,12 +82,12 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
   const contactText = "CONTACT"
 
   return (
-    <section className="relative bg-black overflow-hidden w-full h-[70vh] lg:h-[80vh]">
+    <section className="relative bg-black overflow-hidden w-full h-[80vh]">
       <Image
         src={slides[index].image}
         alt="Slide"
         fill
-        className="object-cover w-full h-full opacity-70"
+        className="object-cover opacity-70"
         priority
       />
 
@@ -156,7 +156,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 flex gap-5 mt-10">
+      <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 z-20 flex gap-5">
         {slides.map((_, i) => (
           <button
             key={i}

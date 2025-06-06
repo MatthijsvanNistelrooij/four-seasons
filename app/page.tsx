@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
           <div className="w-full">
-            <div className="max-w-xl mb-40">
+            <div className="max-w-xl md:mb-40">
               <h2 className="text-xl lg:text-3xl font-bold mb-4">
                 Ervaren dames & herenkapper in Groningen
               </h2>
@@ -73,7 +73,7 @@ export default function Home() {
           </div>
 
           <div className="w-full">
-            <div className="max-w-xl mb-40">
+            <div className="max-w-xl md:mb-40">
               <h2 className="text-xl lg:text-3xl font-bold mb-4">
                 Ook voor beauty behandelingen
               </h2>
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
 
           <div className="w-full">
-            <div className="max-w-xl mb-20">
+            <div className="max-w-xl md:mb-40">
               <h2 className="text-xl lg:text-3xl font-bold mb-4">
                 Verven, knippen, in model brengen en meer!
               </h2>

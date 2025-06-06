@@ -195,7 +195,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row items-center lg:items-start justify-center gap-6 py-40 p-4">
+      <section className="container flex flex-col justify-center py-40 p-8">
         <GoogleReviews />
       </section>
 

@@ -29,7 +29,7 @@ export default function Home() {
 
       <section className="w-full bg-white">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
-          <div className="w-full lg:w-1/2 h-64 lg:h-[500px]">
+          <div className="w-full lg:w-1/2 h-64 lg:h-[400px]">
             <Image
               width={1200}
               height={1200}
@@ -60,7 +60,7 @@ export default function Home() {
 
       <section className="w-full bg-gray-200">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
-          <div className="w-full lg:w-1/2 h-64 lg:h-[500px]">
+          <div className="w-full lg:w-1/2 h-64 lg:h-[400px]">
             <Image
               src={treatment_1}
               alt="Our Barbers"
@@ -101,7 +101,7 @@ export default function Home() {
 
       <section className="w-full bg-white">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
-          <div className="w-full lg:w-1/2 h-64 lg:h-[500px]">
+          <div className="w-full lg:w-1/2 h-64 lg:h-[400px]">
             <Image
               width={1200}
               height={1200}
@@ -195,7 +195,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container flex flex-col justify-center py-40 p-8">
+      <section className=" mx-auto flex flex-col justify-center py-40 p-8">
         <GoogleReviews />
       </section>
 

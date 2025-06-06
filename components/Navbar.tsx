@@ -3,7 +3,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import image from "../public/kapsalon-four-seasons-groningen.png"
-import { List, Menu } from "lucide-react"
+import {  Menu } from "lucide-react"
 // import { useCart } from "@/context/CartContext"
 // import { ShoppingBag } from "lucide-react"
 
@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <div className="sticky top-0 shadow-lg z-50 bg-white">
-      <div className="flex container mx-auto justify-between items-center py-4 bg-white text-black border-gray-700 px-8">
+      <div className="flex container mx-auto justify-between items-center lg:py-4 bg-white text-black border-gray-700 px-7">
         <Link href={"/"} className="text-black py-2 transition-all">
           <Image src={image} height={100} width={400} alt="Logo" />
         </Link>
@@ -45,7 +45,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="lg:hidden ml-5">
+        <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-3xl">
             <Menu className="mt-1" />
           </button>

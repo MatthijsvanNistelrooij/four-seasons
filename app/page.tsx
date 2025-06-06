@@ -29,29 +29,31 @@ export default function Home() {
 
       <section className="w-full bg-white">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
-          <div className="w-full lg:w-1/2 h-64 lg:h-[400px]">
+          <div className="w-full">
             <Image
               width={1200}
               height={1200}
               src={logo_header}
-              alt="Our Barbers"
+              alt="logo"
               className="w-full h-full object-cover rounded-xl"
             />
           </div>
 
-          <div className="w-full lg:w-1/2 flex items-start">
+          <div className="w-full">
             <div className="max-w-xl">
               <h2 className="text-3xl font-bold mb-4">
-                Verven, knippen, in model brengen en meer!
+                Ervaren dames & herenkapper in Groningen
               </h2>
               <p className="text-lg text-gray-600">
-                Bij onze kapsalon in het hart van Groningen zijn wij specialist
-                in verven, knippen, in model brengen en nog veel meer! Wij staan
-                voor je klaar om aan jouw wensen te voldoen. We gebruiken alleen
-                hoogwaardige producten en werken met de nieuwste technieken om
-                ervoor te zorgen dat je tevreden bent met het resultaat. Maak
-                een afspraak bij onze kapper in Groningen en we helpen je graag
-                bij het bereiken van de perfecte look!
+                Bij ons kun je terecht voor een professionele en betaalbare
+                knipbeurt. Wil je een nieuwe look uitproberen? Wij staan voor je
+                klaar met een passend advies. Ook als je jouw haar wil laten
+                bijwerken of gewoon wilt ontspannen met een kappersbehandeling,
+                helpen we je graag. Als vertrouwde kapper in Groningen,
+                begrijpen we dat jouw tijd kostbaar is. De combinatie van ruim
+                35 jaar ervaring en persoonlijke aandacht, maken het mogelijk om
+                snel en efficiënt te werken zonder afbreuk te doen aan de
+                kwaliteit. Dat maakt onze kapsalon zo uniek én gezellig!
               </p>
             </div>
           </div>
@@ -60,7 +62,7 @@ export default function Home() {
 
       <section className="w-full bg-gray-200">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
-          <div className="w-full lg:w-1/2 h-64 lg:h-[400px]">
+          <div className="w-full">
             <Image
               src={treatment_1}
               alt="Our Barbers"
@@ -70,38 +72,36 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-full lg:w-1/2 flex items-start">
-            <div className="max-w-xl">
-              <h2 className="text-3xl font-bold mb-4">
-                Ook voor beauty behandelingen
-              </h2>
-              <p className="text-lg text-gray-600">
-                Je gezicht weer laten stralen? Wees klaar voor elke gelegenheid
-                met onze beauty behandelingen. U bent bij ons aan het juiste
-                adres voor harsen, wimpers kleuren, tijdelijke wimpers,
-                lamineren van de wimpers en wenkbrauwen, make-up. liftende
-                gezichtmassages, gezichtsverzorgingen en wenkbrauw ontwerpen.
-              </p>
+          <div className="w-full">
+            <h2 className="text-3xl font-bold mb-4">
+              Ook voor beauty behandelingen
+            </h2>
+            <p className="text-lg text-gray-600">
+              Je gezicht weer laten stralen? Wees klaar voor elke gelegenheid
+              met onze beauty behandelingen. U bent bij ons aan het juiste adres
+              voor harsen, wimpers kleuren, tijdelijke wimpers, lamineren van de
+              wimpers en wenkbrauwen, make-up. liftende gezichtmassages,
+              gezichtsverzorgingen en wenkbrauw ontwerpen.
+            </p>
 
-              <Button className="group bg-black hover:bg-gray-900 text-white flex items-center gap-2 rounded-full mt-5 overflow-hidden relative px-4 py-2">
-                <span className="relative h-5 w-5 overflow-hidden">
-                  <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-6">
-                    <Minus />
-                  </span>
-                  <span className="absolute inset-0 flex items-center justify-center translate-y-6 transition-transform duration-300 group-hover:translate-y-0 delay-350">
-                    <ArrowRight />
-                  </span>
+            <Button className="group bg-black hover:bg-gray-900 text-white flex items-center gap-2 rounded-full mt-5 overflow-hidden relative px-4 py-2">
+              <span className="relative h-5 w-5 overflow-hidden">
+                <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-6">
+                  <Minus />
                 </span>
-                Meer Lezen
-              </Button>
-            </div>
+                <span className="absolute inset-0 flex items-center justify-center translate-y-6 transition-transform duration-300 group-hover:translate-y-0 delay-350">
+                  <ArrowRight />
+                </span>
+              </span>
+              Meer Lezen
+            </Button>
           </div>
         </div>
       </section>
 
       <section className="w-full bg-white">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 py-24 gap-12">
-          <div className="w-full lg:w-1/2 h-64 lg:h-[400px]">
+          <div className="w-full">
             <Image
               width={1200}
               height={1200}
@@ -111,21 +111,19 @@ export default function Home() {
             />
           </div>
 
-          <div className="w-full lg:w-1/2 flex items-start">
-            <div className="max-w-xl">
-              <h2 className="text-3xl font-bold mb-4">
-                Verven, knippen, in model brengen en meer!
-              </h2>
-              <p className="text-lg text-gray-600">
-                Bij onze kapsalon in het hart van Groningen zijn wij specialist
-                in verven, knippen, in model brengen en nog veel meer! Wij staan
-                voor je klaar om aan jouw wensen te voldoen. We gebruiken alleen
-                hoogwaardige producten en werken met de nieuwste technieken om
-                ervoor te zorgen dat je tevreden bent met het resultaat. Maak
-                een afspraak bij onze kapper in Groningen en we helpen je graag
-                bij het bereiken van de perfecte look!
-              </p>
-            </div>
+          <div className="w-full">
+            <h2 className="text-3xl font-bold mb-4">
+              Verven, knippen, in model brengen en meer!
+            </h2>
+            <p className="text-lg text-gray-600">
+              Bij onze kapsalon in het hart van Groningen zijn wij specialist in
+              verven, knippen, in model brengen en nog veel meer! Wij staan voor
+              je klaar om aan jouw wensen te voldoen. We gebruiken alleen
+              hoogwaardige producten en werken met de nieuwste technieken om
+              ervoor te zorgen dat je tevreden bent met het resultaat. Maak een
+              afspraak bij onze kapper in Groningen en we helpen je graag bij
+              het bereiken van de perfecte look!
+            </p>
           </div>
         </div>
       </section>

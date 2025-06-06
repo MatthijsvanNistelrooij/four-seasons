@@ -47,7 +47,7 @@ const Navbar = () => {
 
         <div className="lg:hidden">
           <button onClick={() => setIsOpen(!isOpen)} className="text-3xl">
-            <Menu className="mt-1" />
+            <Menu className="mt-1 ml-3" />
           </button>
         </div>
 

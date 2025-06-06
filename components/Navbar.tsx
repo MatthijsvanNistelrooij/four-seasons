@@ -3,6 +3,7 @@ import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import image from "../public/kapsalon-four-seasons-groningen.png"
+import { List, Menu } from "lucide-react"
 // import { useCart } from "@/context/CartContext"
 // import { ShoppingBag } from "lucide-react"
 
@@ -44,9 +45,9 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="lg:hidden mr-4">
+        <div className="lg:hidden ml-5">
           <button onClick={() => setIsOpen(!isOpen)} className="text-3xl">
-            ☰
+            <Menu className="mt-1" />
           </button>
         </div>
 

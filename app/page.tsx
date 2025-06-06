@@ -68,7 +68,7 @@ export default function Home() {
               alt="logo"
               width={1400}
               height={1400}
-              className="object-cover h-[400px] rounded-xl shadow-2xl"
+              className="object-cover h-[250px] lg:h-[350px] rounded-xl shadow-2xl"
             />
           </div>
           <div className="w-full">
@@ -108,7 +108,7 @@ export default function Home() {
               alt="logo"
               width={1400}
               height={1400}
-              className="object-cover h-[400px] rounded-xl shadow-2xl"
+              className="object-cover h-[250px] lg:h-[350px] rounded-xl shadow-2xl"
             />
           </div>
 

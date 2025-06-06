@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import logo from "../public/logo.png"
-import matp from "../public/matp.png"
+// import matp from "../public/matp.png"
 
 const Footer = () => {
   return (
@@ -98,7 +98,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="flex text-xs text-gray-500 w-full justify-end bg-black p-5">
+      {/* <div className="flex text-xs text-gray-500 w-full justify-end bg-black p-5">
         Powered by
         <Link href={"/"}>
           <Image
@@ -109,7 +109,7 @@ const Footer = () => {
             className="ml-2"
           />
         </Link>
-      </div>
+      </div> */}
     </>
   )
 }

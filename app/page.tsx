@@ -16,7 +16,7 @@ export default function Home() {
   const [openDialog, setOpenDialog] = useState(false)
 
   return (
-    <div className="font-sans text-gray-800 flex flex-col justify-center">
+    <div className="text-gray-800 flex flex-col justify-center">
       {/* Hero */}
       <Hero onOpenDialog={() => setOpenDialog(true)} />
       <div className="hidden">
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full bg-gray-200">
+      <section className="w-full bg-[#eaeaea]">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 md:px-20 py-24 gap-5 lg:gap-12">
           <div className="w-full h-[400px] mb-10">
             <Image

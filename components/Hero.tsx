@@ -83,14 +83,21 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
 
   return (
     <section className="relative bg-black overflow-hidden w-full h-[80vh]">
-      <Image
-        src={slides[index].image}
-        alt="Slide"
-        fill
-        className="object-cover opacity-70"
-        priority
-      />
-
+      <motion.div
+        key={`image-${index}`}
+        initial={{ opacity: 0, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="absolute inset-0 z-0"
+      >
+        <Image
+          src={slides[index].image}
+          alt="Slide"
+          fill
+          className="object-cover opacity-70"
+          priority
+        />
+      </motion.div>
       <div className="flex container w-full h-full mx-auto items-center py-4 px-8">
         <div className="w-full">
           <button

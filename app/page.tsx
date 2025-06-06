@@ -73,28 +73,30 @@ export default function Home() {
           </div>
 
           <div className="w-full">
-            <h2 className="text-xl lg:text-3xl font-bold mb-4">
-              Ook voor beauty behandelingen
-            </h2>
-            <p className="lg:text-lg text-gray-600">
-              Je gezicht weer laten stralen? Wees klaar voor elke gelegenheid
-              met onze beauty behandelingen. U bent bij ons aan het juiste adres
-              voor harsen, wimpers kleuren, tijdelijke wimpers, lamineren van de
-              wimpers en wenkbrauwen, make-up. liftende gezichtmassages,
-              gezichtsverzorgingen en wenkbrauw ontwerpen.
-            </p>
+            <div className="max-w-xl">
+              <h2 className="text-xl lg:text-3xl font-bold mb-4">
+                Ook voor beauty behandelingen
+              </h2>
+              <p className="lg:text-lg text-gray-600">
+                Je gezicht weer laten stralen? Wees klaar voor elke gelegenheid
+                met onze beauty behandelingen. U bent bij ons aan het juiste
+                adres voor harsen, wimpers kleuren, tijdelijke wimpers,
+                lamineren van de wimpers en wenkbrauwen, make-up. liftende
+                gezichtmassages, gezichtsverzorgingen en wenkbrauw ontwerpen.
+              </p>
 
-            <Button className="group bg-black hover:bg-gray-900 text-white flex items-center gap-2 rounded-full mt-5 overflow-hidden relative px-4 py-2">
-              <span className="relative h-5 w-5 overflow-hidden">
-                <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-6">
-                  <Minus />
+              <Button className="group bg-black hover:bg-gray-900 text-white flex items-center gap-2 rounded-full mt-5 overflow-hidden relative px-4 py-2">
+                <span className="relative h-5 w-5 overflow-hidden">
+                  <span className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-6">
+                    <Minus />
+                  </span>
+                  <span className="absolute inset-0 flex items-center justify-center translate-y-6 transition-transform duration-300 group-hover:translate-y-0 delay-350">
+                    <ArrowRight />
+                  </span>
                 </span>
-                <span className="absolute inset-0 flex items-center justify-center translate-y-6 transition-transform duration-300 group-hover:translate-y-0 delay-350">
-                  <ArrowRight />
-                </span>
-              </span>
-              Meer Lezen
-            </Button>
+                Meer Lezen
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -112,18 +114,20 @@ export default function Home() {
           </div>
 
           <div className="w-full">
-            <h2 className="text-xl lg:text-3xl font-bold mb-4">
-              Verven, knippen, in model brengen en meer!
-            </h2>
-            <p className="lg:text-lg text-gray-600">
-              Bij onze kapsalon in het hart van Groningen zijn wij specialist in
-              verven, knippen, in model brengen en nog veel meer! Wij staan voor
-              je klaar om aan jouw wensen te voldoen. We gebruiken alleen
-              hoogwaardige producten en werken met de nieuwste technieken om
-              ervoor te zorgen dat je tevreden bent met het resultaat. Maak een
-              afspraak bij onze kapper in Groningen en we helpen je graag bij
-              het bereiken van de perfecte look!
-            </p>
+            <div className="max-w-xl">
+              <h2 className="text-xl lg:text-3xl font-bold mb-4">
+                Verven, knippen, in model brengen en meer!
+              </h2>
+              <p className="lg:text-lg text-gray-600">
+                Bij onze kapsalon in het hart van Groningen zijn wij specialist
+                in verven, knippen, in model brengen en nog veel meer! Wij staan
+                voor je klaar om aan jouw wensen te voldoen. We gebruiken alleen
+                hoogwaardige producten en werken met de nieuwste technieken om
+                ervoor te zorgen dat je tevreden bent met het resultaat. Maak
+                een afspraak bij onze kapper in Groningen en we helpen je graag
+                bij het bereiken van de perfecte look!
+              </p>
+            </div>
           </div>
         </div>
       </section>

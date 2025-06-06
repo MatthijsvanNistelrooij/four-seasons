@@ -29,13 +29,13 @@ export default function Home() {
 
       <section className="w-full bg-white ">
         <div className="flex flex-col lg:flex-row container mx-auto items-stretch px-8 md:px-20 py-24 gap-5 lg:gap-12">
-          <div className="w-full h-[400px] mb-10">
+          <div className="w-full h-[250px] mb-10 bg-[#e9207e] rounded-xl">
             <Image
               src={logo_header}
               alt="logo"
               width={1400}
               height={1400}
-              className="object-cover h-[400px] rounded-xl shadow-2xl"
+              className="object-cover h-[250px] lg:h-[350px] rounded-xl shadow-2xl"
             />
           </div>
 

@@ -92,18 +92,18 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex text-xs text-gray-500 w-full mt-12 justify-center">
-          Powered by
-          <Link href={"/"}>
-            <Image
-              src={matp}
-              width={14}
-              height={14}
-              alt="logo"
-              className="m-1 ml-2"
-            />
-          </Link>
-        </div>
+      </div>
+      <div className="flex text-xs text-gray-500 w-full mt-12 justify-center">
+        Powered by
+        <Link href={"/"}>
+          <Image
+            src={matp}
+            width={18}
+            height={18}
+            alt="logo"
+            className="ml-2"
+          />
+        </Link>
       </div>
     </footer>
   )

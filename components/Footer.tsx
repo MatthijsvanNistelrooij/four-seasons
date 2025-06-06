@@ -5,8 +5,8 @@ import matp from "../public/matp.png"
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white py-24 px-6 md:px-16">
-      <div className="container mx-auto flex flex-col md:flex-row gap-12">
+    <footer className="bg-black text-white py-24">
+      <div className="container mx-auto px-8 flex flex-col md:flex-row gap-12">
         {/* Logo section */}
         <div className="flex-shrink-0">
           <Image

@@ -82,7 +82,7 @@ const Hero = ({ onOpenDialog }: HeroProps) => {
   const contactText = "CONTACT"
 
   return (
-    <section className="relative bg-black overflow-hidden w-full h-[50vh] lg:h-[80vh]">
+    <section className="relative bg-black overflow-hidden w-full h-[70vh] lg:h-[80vh]">
       <Image
         src={slides[index].image}
         alt="Slide"
